@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="lkGVkWqF9O7COx7F5A58cS9cIBekelCQz7D9xNg9">
+    <title>Registration</title>
+    <link href="https://ayushnext.ayush.gov.in/frontend/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://ayushnext.ayush.gov.in/frontend/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://ayushnext.ayush.gov.in/frontend/css/material.css" rel="stylesheet" />
+    <link href="https://ayushnext.ayush.gov.in/frontend/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="https://ayushnext.ayush.gov.in/frontend/css/scrollBar.css" rel="stylesheet" />
+    <link href="https://ayushnext.ayush.gov.in/frontend/css/animate.css" rel="stylesheet" />
+    <link href="https://ayushnext.ayush.gov.in/frontend/css/style.css" rel="stylesheet" />
+    <link href="https://ayushnext.ayush.gov.in/css/date-picker.css" rel="stylesheet" />
+    <link href="https://ayushnext.ayush.gov.in/css/custom.css" rel="stylesheet" />
+
+    <style>
+        .thumb-r-img {
+            width: 95px;
+            margin-right: 0px !important;
+        }
+
+        .thumb-text {
+            width: 75%;
+        }
+    </style>
+
+
+    <style>
+        .btn-refresh {
+            font-size: 22px;
+        }
+
+        img#profileImage {
+            max-width: 220px;
+            max-height: 220px;
+            height: 220px;
+        }
+    </style>
+</head>
+
+<body class="active-preloader-ovh">
+    <div class="preloader">
+        <!--<div class="spinner"></div>-->
+    </div>
+
+    <section class="top-bar">
+        <div class="container">
+            <div class="row top-br-row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                    <div class="india-govt">
+                        <li><a href="https://www.india.gov.in/" target="_blank"><img src="https://ayushnext.ayush.gov.in/frontend/images/flag1.jpg" alt="IND"></a></li>
+                        <li><a href="https://www.india.gov.in/" target="_blank">भारत सरकार</a></li>
+                        <li><a href="https://www.india.gov.in/" target="_blank">Government of India</a></li>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-3 pr-2 pl-2">
+
+                    <form method="get" action="https://ayushnext.ayush.gov.in/search-result" id="searchForm">
+                        <input type="hidden" name="_token" value="lkGVkWqF9O7COx7F5A58cS9cIBekelCQz7D9xNg9">
+                        <div class="search_field">
+                            <input class="form-control search_input" name="_search_input" placeholder="Search" autocomplete="off"> <span class="input-group-append custm-search">
+						<button type="submit" class="btn btn-outline-secondary calender-btn custm-s-btn"
+							type="button">
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</button>
+					</span>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="col-12 col-md-12 col-lg-5 d-flex justify-content-end ">
+
+
+
+
+
+                    <form class="top-form mt-2">
+                        <div class="form-row">
+                            <div class="form-group ">
+                                <a href="https://ayushnext.ayush.gov.in/students" class="btn loginbtn">Signup</a>
+                                <a href="https://ayushnext.ayush.gov.in/user/login" class="btn loginbtn">Login</a>
+
+                            </div>
+                            <div class="form-group">
+                                <!--<select id="inputState" class="form-control">
+	                      	  <option value="">Select</option>
+	                          <option value="en"   selected >English</option>
+	                          <option value="hi"  >Hindi</option>
+	                       </select>-->
+                                <div class="dropdown">
+                                    <button class="btn loginbtn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN</button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="https://ayushnext.ayush.gov.in/students?change_language=en">EN (English)</a> <a class="dropdown-item" href="https://ayushnext.ayush.gov.in/students?change_language=hi">HI (Hindi)</a>                                        </div>
+                                </div>
+
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="header">
+        <div class="container">
+            <div class="row align-items-start">
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 pt-2">
+                    <div class="logo-main indo-first">
+                        <a href="https://www.main.ayush.gov.in/" target="_blank" class="logo-anchor"> <img
+						src="https://ayushnext.ayush.gov.in/frontend/images/india-emb.png" alt="emblem">
+						<p class="text-transform-none">
+							 Ministry of Ayush <span class="msub">Government of India</span>						</p>
+					</a>
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-6 col-lg-4">
+                    <div class="logo-main next-logo">
+                        <a href="https://ayushnext.ayush.gov.in/home" class="logo-anchor india-emb"> <img
+						src="https://ayushnext.ayush.gov.in/frontend/images/ayush_logo.png" alt="emblem">
+						<p class="text-transform-none">
+							Ayush Next<span class="nxt"></span> 
+						</p>
+					</a>
+                    </div>
+                </div>
+
+
+
+                <!---<div class="col-12 col-sm-12 col-md-12 col-lg-4">
+				<div class="logo-main">
+					<a href="https://ayushnext.ayush.gov.in/home" class="logo-anchor"> <img
+						src="https://ayushnext.ayush.gov.in/frontend/images/emblem-dark.png" alt="emblem">
+						<p class="text-transform-none">--->
+                <!--Ayush <span class="nxt">Next</span> <span class="logosub">Ministry of Ayush <span class="msub">Government of India</span>--></span>
+                <!---</p>
+					</a>
+				</div>
+			</div> -->
+
+                <div class="col-6 col-sm-6 col-md-6 col-lg-4">
+                    <div class="logo-main ayush-grid">
+                        <a href="https://ayushnext.ayush.gov.in/home" class="logo-anchor"> <img
+						src="https://ayushnext.ayush.gov.in/frontend/images/grid-72.png" alt="grid">
+						<p>Ayush Grid</p>
+					</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="mainbg inpage-main blog-bg">
+        <div class="inner-bg">
+            <!--Header Component-->
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light  custom-nav">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="https://ayushnext.ayush.gov.in">Home<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="https://ayushnext.ayush.gov.in/about-us">About Us<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="https://ayushnext.ayush.gov.in/list/research">Research<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="https://ayushnext.ayush.gov.in/list/news">What's New<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="https://ayushnext.ayush.gov.in/list/writeUps">Writeups<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="https://ayushnext.ayush.gov.in/list/current">Current Developments<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="https://ayushnext.ayush.gov.in/question-bank">Question Bank<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="https://ayushnext.ayush.gov.in/list/jobs">Career<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="https://ayushnext.ayush.gov.in/game-list">Games<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="https://ayushnext.ayush.gov.in/site/contact-us">Contact Us<span class="sr-only">(current)</span></a>
+                            </li>
+                            <!--li class="nav-item">
+					<a class="nav-link disabled" href="#"><span class="bars"><i class="fas fa-ellipsis-h"></i></span></a>
+				</li-->
+                        </ul>
+
+                        <form class="form-inline my-2 my-lg-0">
+                            <a href="https://ayushnext.ayush.gov.in/user/login" class="btn askbtn"><span>Ask An Expert</span><img src="https://ayushnext.ayush.gov.in/frontend/images/userset.png"></a>
+                        </form>
+
+
+                    </div>
+                </nav>
+            </div>
+            <!--Header Component-->
+            <div class="container">
+                <div class="both-title">
+                    <div class="b-title">
+                        <h5>Register</h5>
+                    </div>
+                    <p>Create an account with Ayush Next</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--  Section for content starts -->
+    <div>
+        <div class="flash-body">
+
+
+        </div>
+        <section class="regis-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="top-regis-head d-flex justify-content-between">
+                            <div class="login-title pb-3">
+                                <div>
+                                    <h4>You Are</h4>
+                                    <div class="underline"></div>
+                                </div>
+                            </div>
+                            <ul class="nav nav-tabs regis-tab" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="https://ayushnext.ayush.gov.in/students" role="tab" aria-controls="student" aria-selected="true">Student</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://ayushnext.ayush.gov.in/colleges">College</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://ayushnext.ayush.gov.in/industries">Industry</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://ayushnext.ayush.gov.in/students/expert/register">Expert</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="student" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="regis-btm-white">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 right_img">
+                                            <div class="regi_bx">
+                                                <div class="login-title pb-3 r-title">
+                                                    <div>
+                                                        <h4>Student Registration Form</h4>
+                                                    </div>
+                                                </div>
+                                                <form class="loginformarea" id="registerForm" method="POST" action="https://ayushnext.ayush.gov.in/students/register">
+                                                    <input type="hidden" name="_token" value="lkGVkWqF9O7COx7F5A58cS9cIBekelCQz7D9xNg9">
+                                                    <div class="form-group  row mt-4">
+                                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                                            <label>Student Type<span class="text-danger">*</span></label>
+                                                            <div class="input_base">
+                                                                <select name="user_type" id="user_type" class="form-control usertype" required autofocus>
+												<option value="">Select Type</option>
+												<option value="Ayush Students">AYUSH Student</option>
+												<option value="Allopathy Students">Allopathy Student</option>
+												<option value="Other Students">Other Student</option>
+											</select>
+
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 collegenames" style="display:none">
+                                                            <label for="inputState">College</label><span class="text-danger">*</span>
+
+                                                            <select name="ref_college_id" id="ref_college_id" class="form-control" required autofocus>
+                                    <option value="">Select College</option>
+                                               <option value="78" >Aadhar's (Shri Shiv Basav Jyoti)Homoeopathic Medical College & Hospital , CTS No. 10564A(P)M, M Extension, Next to Vidhyadhiraj Sabhagraha Ramachandra, Belgaum - 590010.</option><option value="198" >Aadya Shri Nijalingeshwar Shikshan Sansthes’ S.B Shirkoli Homoeopathic Medical College,  Anant Vidya nagar, P.B No.16 Sankeshwar. Hukkeri,  Distt. Belgaum -591313</option><option value="194" >Aarihant Homoeopathic Medical College & Research Institute, Bhoyan Rathod, opposite IFFCO, Adalaj-Kalol Road, Gandhinagar, Gujarat</option><option value="190" >Aarya-Veer Homoeopathic Medical College, at Kuvadva, Kuvada-Sardar Road, Rajkot-Ahmedabad NH, District-Rajkot-360 030</option><option value="311" >Abhilashi Ayurvedic College and Research Institute, Chailchowk, Tehsil Chachyot, Distt-Mandi, Himachal Pradesh</option><option value="435" >Acharya Gyan Ayurved Medical College, 278, Jawahar Marg, Malganj Choraha, Indore, Madhya Pradesh</option><option value="163" >Adarsh Shikshan Sanstha's Sonajirao Kshirsagar Homoeopathic Medical College, Vidyanagar(W), Beed - 431122.</option><option value="530" >Adarsh Shikshan Vikas Mandal, Junnar, Pune, Bhimashankar AMC & H, Ambegaon Pune MS</option><option value="14" >Adi Shiva Sadguru Ali Saheb Shivaryula Homoeopathic Medical College, Anantpur, Guntakal, Andhra Pradesh</option><option value="481" >Aditya Ayurved College, Telgaon Road, by Aditya Bahu-Uddeshiya Sanstha, Beed, Maharashtra</option><option value="77" >A.G.M. Homoeopathic Medical College & Hospital, Navagrha Teerth Kshetra, Varur-Hubali, Karnataka</option><option value="418" >Ahalia Ayurvedic Medical College at Elippara, Kozhipara, Palakkad, Kerala by Ahalia International Foundation, Palakkad, Kerala</option><option value="57" >Ahmedabad Homoeopathic Medical College,Bhopal-Ghuma Road, Ghuma , Ahmedabad – 380 058.</option><option value="536" >Ahmed Gharib Unani Medical College, Akkalkiwa, Distt. Nandurbar, Dhulle, Maharashtra</option><option value="106" >Ahmednagar Homoeopathic Medical College & Hospital, Savedi Road, Ahmednagar – 414003.</option><option value="261" >AIIA, Sarita Vihar New Delhi</option><option value="432" >Ajivan Swasthya Samvardhan Ayurveda Mahavidyalaya at Chitrakoot, Satna, Madhya Pradesh By the Deendayal Research Institute,</option><option value="678" >Ajmal Khan Tibiya College, Aligarh, Uttar Pradesh</option><option value="607" >Al-Arif Unani Medical College, Hyderabad, Telangana.</option><option value="447" >Al-Farooq Unani Tibbia College, Indore, Madhya Pradesh</option><option value="646" >Aligarh Ayurveda Medical College, Aligarh- 202 002, Uttar Pradesh</option><option value="693" >Aligarh Unani Medical College & ACN Hospital, AUAMC Campus,Kasimpur Road, CAN City, Aligarh, Uttar Pradesh</option><option value="686" >Allama Iqbal Unani Medical College, Muzaffarnagar, Uttar Pradesh.</option><option value="9" >All India Institute of Ayurveda (AIIA)</option><option value="361" >ALN Rao Memorial Ayurvedic Medical College, Koppa, Karnataka</option><option value="343" >Alva's Ayurveda Medical College, Moodbidri, Mangalore- Karnataka</option><option value="70" >Alva's Homoeopathic Medical College, Alva's Hospital Road, Moodbidri - 574227, Dakshin Kannada, Karnataka</option><option value="412" >Amrita School of Ayurveda, Clappana PO, Karunagapally Taluk, Kollam, Kerala-690525</option><option value="385" >Amrutha Ayurvedic Medical College, Chitradurga, Karnataka</option><option value="67" >A.M. Shaikh Homoeopathic Medical College, Nehru Nagar, Belgaum – 590 010.</option><option value="478" >Anand Ayurvedic Medical College, Phulewadi Road, Vaijapur, Aurangabad, MS</option><option value="48" >Anand Homoeopathic Medical College & Research Institute, Near Sardar Baug, Bhalej Road, Anand - 388 001.</option><option value="602" >Anantha Laxmi Govt. Ayurved College, Warangal, Andhra Pradesh</option><option value="103" >Anantrao Kanase Homoeopathic Medical College & Hospital , Junnar,  Alephata, Pune-412411</option><option value="40" >Ananya College of Homoeopathy, Kalol, KIRC Campus, Ahmedabad-Mehsana Highway, Gandhinagar, Gujarat</option><option value="533" >Anjuman-I-Islam’s Dr. Ishaq Jam Khanawala Tibbia Unani Medical College & Haji Abdul Razak Kalsekar Tibbia Hospital, Mumbai, Maharashtra</option><option value="213" >Antarbharati Homoeopathic Medical College & Hospital, Dabha, Nagpur -440023</option><option value="199" >Anuradha Homoeopathic Medical College & Hospital, No. 341, 16th Main, M.C Layout, Vijayanagar, Banglore, Karnataka</option><option value="92" >Anushree Homoeopathic Medical College, 112 Near Samdariya, Green City,Kashodhan Nagar, Madhotal , Jabalpur-482002</option><option value="674" >Apex Welfare Trust Apex Institute of Ayurveda Medicine Mirzapur UP</option><option value="499" >Aquarious Public  Education  Society’s  Mahadeorao  Shivankar  Ayurved  Medical  College& Research  Institute, Katangi Kala Gondia , Maharashtra</option><option value="232" >Arihant Homeo. Medical College Hospital & Research Centre, A.B. Road, Sandhwa, Distt. Barwen (M.P.)</option><option value="150" >Arogya Homoeopathic Medical College. Naila, Jaipur - 303012, Rajasthan</option><option value="265" >Aryakanya Shudha Ayurveda Mahavidyalaya, Vadodara, Gujarat</option><option value="407" >Ashtangam Chikitsalayam & Vidyapeetham, Palakkad, Kerala</option><option value="519" >Ashvin Rural Ayurved College, Sadhvi Preeti Sudhaji Maharaj Nagar, Manchi Hill, Ashvi BK, Tal. Sangamner, Distt. Ahmednagar – 413 714, Maharashtra</option><option value="358" >Ashwini Ayurveda Medical College, Devangiri, Karnataka</option><option value="365" >Ashwini Ayurvedic Medical College, Hospital & Research Centre, Ring Road, Maralur, Tumkur, Karnataka.</option><option value="666" >Ask Educaiton Society Lucknow Ankerite Ayurvedic Medical College Mohanlal Ganj Lucknow</option><option value="17" >A.S.R.Homoeopathic Medical College, Prathipadu, Tadepalligudem, West Godavari District, Andhra Pradesh.</option><option value="20" >Assam Homoeopathic Medical College & Hospital, Mull singh Road, Lakhinagar, P.O. Haibergaon, Nagaon-782002</option><option value="460" >Astanga Ayurveda College, Sadashiv Peth, Vidyanagar Colony, Pune</option><option value="132" >Atal Bihari Vajpayee Homoeopathic Medical College, at Jalke(BK), Ahmednagar, Maharashtra.</option><option value="86" >Athurasramam N.S.S. Homoeopathic Medical College, Sachivothamapuram,  Kottayam – 686532.</option><option value="331" >Atreya Ayurvedic Medical College, Doddaballapura Taluk, Bangalore, Karnataka</option><option value="595" >ATSVS Siddha Medical College and Hospital, Pudukkadai, Kanyakumari, Tamilnadu</option><option value="303" >Ayujyoti  Ayurvedic College at Jodhpuria, Sirsa, Haryana by Ayujyoti Educational and Research Society, Sirsa, Haryana</option><option value="111" >Ayurveda and Unani Tibbia College (Ayurveda), Ajmal Khan Road, Karol Bagh Delhi</option><option value="262" >Ayurveda and Unani Tibbia College (Unani), Ajmal Khan Road, Karol Bagh Delhi</option><option value="507" >Ayurved College and Hospital & Research Institute at Ajanta Road, Sagvan, Buldana, Maharashtra, By Anandi Shikshan Prasarak Mandal</option><option value="584" >Ayurved College, Coimbatore, 242 B, Trichy Road, Sulur, Coimbatore, Tamil Nadu</option><option value="260" >Ayurvedic Medical College at Village Khera Dabar, Najafgarh, New Delhi-110002 by Ch. Brahm Prakash Ayurvedic Charak Sansthan</option><option value="316" >Ayurved Mahavidyalaya & Hospital, Heggeri Extension, Old Hubli-580024, Karnataka</option><option value="487" >Ayurved Mahavidyalaya Shri Shivaji Nagar, Tal. Rahuri, Rahuri Factory, Ahmednagar, Maharashtra</option><option value="250" >Ayurved Medical College, Ghughi Chowk, Gaya – 823 001, Bihar</option><option value="462" >Ayurved Seva Sangh's Ayurved Mahavidyalaya, Ganeshwadi Panchavati, Tal. & Dist. Nasik, Maharashtra</option><option value="463" >Ayurvidya Prasarak Mandal’s Ayurved Mahavidyalaya, Near Railway Station, Sion,  Mumbai - 400 022, Maharashtra</option><option value="89" >Ayushmati Education & Social Society,202,Ganga Jamuna Complex, Zone-I, M.P Nagar, Bhopal-462016; Madhya Pradesh, [Ram Krishna College of Homoeopathy, Gandhi Nagar, Bhopal]</option><option value="209" >Ayushmati Education & Social Society,202,Ganga Jamuna Complex, Zone-I, M.P Nagar, Bhopal-462016; Madhya Pradesh, [Ram Krishna College of Homoeopathy, Gandhi Nagar, Bhopal]</option><option value="562" >Baba Hira Das ji Ayurvedic Medical College & Hospital,  Post- Badal, Distt- Muktsar, Punjab.</option><option value="548" >Babe Ke Ayurvedic Medical College & Hospital, Daudhar, Moga, Punjab</option><option value="370" >Bahubali Vidyapeeth’s JV Mandal’s Gramin Ayurveda College, Terdal, Karnataka</option><option value="177" >Bakson Homoeopathic Medical College, Plot No.36B, Knowledge Park, Phase-I, Greater NOIDA, Distt.-Gautam Budh Nagar-201306</option><option value="671" >Baldev Shridhar Shiksha Prasar Trust SNSK Ayurvedic Medical College Pandeypur Radhe, Ghazipur UP</option><option value="657" >Bapu Ayurved Medical College & H Ladanpur Mau U.P.</option><option value="326" >Bapuji Ayurveda Medical College, Challakere, Karnataka</option><option value="325" >Bapuji Ayurveda Medical College, Shimoga, Karnataka</option><option value="49" >Baroda Homoeopathic Medical College, Near SonarKui, opp.  Xavier Technical Institute,Sindhrot Road, Sevasi, Vadodara-391101</option><option value="707" >Beehive Ayurvedic Medical College Central Hopetown Dehradun</option><option value="696" >Belley Shankerpur Rajib Gandhi Memorial Ayurved College & Hospital, Kushdanga, Distt. 24 Pragana North – 743 126, West Bengal</option><option value="730" >Bengal Homoeopathic Medical College & Hospital, P.O.Asansol, Ismile, Distt. Burdwan – 713 301.</option><option value="43" >B. G. Garaiya Homoeopathic Medical College, Rajkot</option><option value="73" >Bhagwan Buddha  Homoeopathic Medical College & Hospital, Srinidhi Complex,Outer Ring Road, Mallathalli, Bengaluru - 560056</option><option value="353" >Bhagwan Mahaveer Jain Ayurveda Medical College, Gajendragarh, Karnataka</option><option value="638" >Bhagwant Education Development Society, Bhagwant Ayurvedic College  Bijnor Delhi Highway Muzaffarnagar UP</option><option value="673" >Bharat Ayurved Medical College, Hospital & Resarch Centre, Roorkee road, Muzaffarnagar, Uttar Pradesh</option><option value="110" >Bharati Vidyapeeth's  Homoeopathic Medical College & Hospital, Katraj, Dhankawadi, Pune-411043</option><option value="491" >Bharatiya Sanskriti Darshan Trust Ayurved Vishwashanti Dham, Wagholi – 412 207, Talq. Haveli,   Distt. Pune , Maharashtra</option><option value="59" >Bhargva Homoeopathic Medical College, Vidyagram, At & post-Dahemi, Ta-Borsad, Dist-Anand-388560.</option><option value="264" >Bharteeya Sanskriti Prabodhini’s Gomantak Ayurveda Mahavidyalaya & Research Centre, Vajem, Shiroda, Goa-403103</option><option value="74" >Bhartesh Homoeopathic Medical College & Hospital, B.C.188, Old P.B. Road,  Belgaum – 590 016.</option><option value="719" >Bharti Ayurved Medical College & Hospital Pulgaon Chowk Durg ,Chhattisgarh</option><option value="522" >Bharti Vidyapeeth’s College of Ayurved, Satara Road, Haveli, Pune-411043 Maharashtra</option><option value="223" >Bhartiya Homoeopathic Medical College & Hospital, B. Narayan Gate, NH-11, Agra Road,  Bharatpur – 321001.</option><option value="472" >Bhau Saheb Maulak Ayurved Mahavidyalaya,Great Nag Road, Nandanwan, Nagpur , Maharashtra</option><option value="486" >Bhausaheb Mulak Ayurvedic Medical College, Butibori, Nagpur Maharashtra</option><option value="390" >Bidar Vidya Kendra Akkamahadevi Ayurvedic Medical College & Hospital Bidar Karnataka</option><option value="740" >Biju Pattnaik Homoeopathic Medical College, Behrampur – 760001, Ganjam, Orissa</option><option value="732" >Birbhum Vivekananda Homoeopathic Medical College & Hospital, Sainthia, Distt. Birbhum – 731 234.</option><option value="334" >BLDE Association's A V Samiti’s Ayurved Mahavidyalaya, Vidya Nagar, Bagalkot Road, Bijapur, Karnataka</option><option value="185" >B.N.M Homoeopathic Medical College and Hospital, Saharsa</option><option value="639" >Brijbasi Education & Welfare Society Mathura SKS Ayurvedic Medical College Chaumuhan Mathura</option><option value="612" >Bundelkhand Government Ayurved College, Jhansi – 294 001, Uttar Pradesh</option><option value="731" >Burdwan Homoeopathic Medical College & Hospital, Nimbark Bhavan, Rajganj, P.O.-Nutanganj, Distt. Burdwan – 713 102.</option><option value="80" >BVVS Homoeopathic Medical College & Hospital, Bagalkot -587101</option><option value="699" >Calcutta Unani Medical College and Hospital, 8/1 Abdul Halim Lane, Kolkata,West Bengal.</option><option value="337" >C. B. Guttal Ay. Medical College, Shri R F Neeralkatti Education Campus, Garag Road, Mummigatti, Dharwad-580011, Karnataka</option><option value="36" >C.D.P. College of Homoeopathic Medicine & Hospital, Near Anand Mangal Society, Bhatar Road, Surat - 395 001.</option><option value="746" >Central Institute of Budhist Studies (CIBS), Choglamsar, Leh-194104, J&K</option><option value="677" >Central Institute of Higher Tibetan Studies, Sarnath Road, Varanasi, UP</option><option value="698" >Chagpori Tibetan Medical Institute (CTMI), 10, Burdwan road, West View, Darjeeling - 734101, West Bengal</option><option value="496" >Chaitanya Ayurved Mahavidyala Chaitanyavan, NH No. 6, At & Post-Sakegaon, Tal. Bhusawal Distt. Jalgaon , Maharashtra</option><option value="178" >Chandola Homoeopathic Medical College & Hospital, Kichha Road Rudrapur P.O Lalpur District U.S.Nagar, Nainital, Uttrakhand- 263148</option><option value="279" >Charutar Vidya Mandal’s Govindbhai Jorabhai Patel Ayurvedic College at New Vallabh Vidyanagar, Distt. Anand</option><option value="736" >Chhadamilal Choukshey Memorial Homeopathic Medical College  Hospital and Research Centre, NH-200,  Lal Khadan, Masturi Road,  Bilaspur-495001</option><option value="480" >Chhatrapati Shahu Maharaj Shikshan Sanstha’s Ayurved Mahavidyalaya, Paithan Road, Kanchanwadi, Aurangabad – 431 002, Maharashtra</option><option value="720" >Chhattisgarh Ayurvedic Medical College, G. E. Road, Village- Manki, Distt- Rajnandgaon ,  Chhattisgarh</option><option value="306" >Choudhary Devilal College of Ayurveda, Bhagwangarh, Buria Road, Jagadari, Haryana</option><option value="58" >C.N. Kothari Homoeopathic Medical College  & Research Centre, Near Van Chetna, Kakanagar Bypass Highway, Tadkuva, Vyara,Distt.Surat-394 650</option><option value="434" >College of Ayurvedic Medicine, Gwalior, Madhya Pradesh By Sw. Gujarati Devi Shiksha Prasar Avum Samaj Kalyan Samiti, Gwalior</option><option value="742" >Cuttack Homoeopathic Medical College & Hospital, At. & P.O.,Naya Bazar, Cuttack-753004</option><option value="494" >Dada Saheb Surupsingh Naik Ayurved Mahavidyalaya, Shri Suwalal Bafna, Vidyanagar, Mumbai Agra Mahamarg Nangaon, Dhule , Maharashtra</option><option value="248" >Dayananda Ayurveda College & Hospital, Siwan, Bihar</option><option value="560" >Dayananda Ayurveda College, Mahatma Hansraj Marg, G T Road, Jalandhar, Punjab</option><option value="685" >Deoband Unani Medical College, Hospital and Research Centre, Naya Bans, Uttar Pradesh</option><option value="556" >Desh Bhagat Ayurvedic College & Hospital, Village Sounti, Amloh, Distt. Fatehgarh Sahib-147203, Punjab</option><option value="197" >Devki Mahaveer Homoeopathic Medical College and Research Hospital, Farathiya, Garhwa,  Jharkhand</option><option value="166" >Devs Homoeopathic Medical College, Devnagar, R R Distt., Andhra Pradesh</option><option value="278" >Dhanvantary Ayurved College, Kajiya (Koydam), Distt. Kheda, Gujarat</option><option value="362" >Dhanwantari Ayurved College & Hospital, P.O. Siddhapur – 581 355, Distt. North Canara , Karnataka</option><option value="620" >Dhanwantari Ayurvedic Medical College at Semari Tehsil Chhata, Dist. Mathura, U.P.  by Shri Anand Niketan, Dharamshala Academic Trust</option><option value="100" >Dhanwantari Homoeopathic Medical College Hospital & Research Centre, Dhanwantari Campus, Kamatwade,CIDCO, Nashik – 422 008</option><option value="618" >Dhanwantri Ayurved Medical College & Hospital, Chitauli, Fatehganj, Bareilly UP</option><option value="518" >Dhanwantri Ayurved Medical College, Udgir, Infront of Kala Mandir, Nanded Road, Udgir Distt. Latur – 413 517 , Maharashtra</option><option value="585" >Dharma Ayurveda College, Sriperambudur, Tamil Nadu</option><option value="517" >Dharti Jansewa Pratishthan Aurangabad  Dr. Ved Prakash Patil Ayurvedic Medical College Revgaon Road Jalna Maharashtra</option><option value="101" >Dhondumama Sathe  Homoeopathic Medical College, F.P.No.23, Off Karve Road, Pune – 411004.</option><option value="216" >Disha Shikshan-V-Vikas Kendra‘s E.B. Gadkari Homoeopathic Medical College, 1830/A/B, Kadgaon Road, Opposite Govt.Rest House, Gadhinglaj, Dist. Kolhapur-416 502.</option><option value="97" >District Homoeopathic Medical College & Hospital,475 &  478, Katju Nagar, Ratlam-457001</option><option value="114" >D.K.M.M. Homoeopathic Medical College & Hospital, Shree Guru Ganesh Nagar, Behind Bibi Ka Maqbara, Aurangabad - 431 004.</option><option value="461" >DMM Ayurved Mahavidyalaya, Aarni Road, Shivaji Nagar, Yeotmal , Maharashtra</option><option value="726" >D.N.De Homoeopathic Medical College & Hospital, 12, Gobind Khatik Road, Kolkata – 700 046.</option><option value="682" >Dr. Abdul Ali Tibbiya College & Hospital, Katauli, Malihabad, Lucknow</option><option value="246" >Dr Abdul Haq Unani Medical College, Kurnool, Andhra Pradesh</option><option value="738" >Dr. Abhin Chandra Homoeopathic Medical College & Hospital, Unit III, Kharavela Nagar, Bhubaneshwar – 751001 Distt. Puri.</option><option value="13" >Dr.Allu Ramalingaiah Govt. Homoeopathic Medical College, D.No.26-1-11, Near ‘Y’ Junction, Central Jail Road,</option><option value="669" >Dr. Anar Singh Ayurvedic Medical College Farrukhabad UP</option><option value="75" >Dr. B.D.Jatti Homoeopathic Medical College & Hospital, PG Research Centre, D.C. Compound,  Dharwad – 580001</option><option value="375" >Dr BNM Rural Ayurveda Medical College, Bijapur, Karnataka</option><option value="393" >Dr. B R Ambedkar Education Welfare Society Belagavi, SBG AMC & H Belagavi Karnataka.</option><option value="601" >Dr. B R K R Government Ayurveda College, Hyderabad, Andhra Pradesh</option><option value="33" >Dr. B.R.Sur Homoeopathic Medical College, Hospital & Research Centre, Nanak Pura Gurdwara, Moti Bagh- II, New Delhi -110 021.</option><option value="105" >Dr.D.Y.Patil  Homoeopathic Medical College & Research Centre, PIMPRI, Pune - 411 018</option><option value="505" >Dr. DY Patil Pratishtan Ayurved College, Pimpri, Sant Tuka Ram Nagar, Pune – 411 018, Maharashtra</option><option value="12" >Dr.Gururaju Govt. Homoeopathic Medical College, Gudivada Distt.Krishna-  521 301</option><option value="158" >Dr.Hahnemann Homeopathic Medical College & Research Centre, Koneripatty, Rasipuram, Namakkal Distt.-637408</option><option value="27" >Dr.Halim Homeopathic Medical College & Hospital, Eknighat, P.O. Laheriasarai, Distt.Darbhanga – 846 001</option><option value="119" >Dr.J.J. Magdum Homoeopathic Medical College, Jayasingpur, Shirol, Distt. Kolhapur - 416 101.</option><option value="513" >Dr. J.J. Magdum Trust’s, Dr. J.J. Magdum Ayurved Medical College, Shirol, Kolhapur</option><option value="22" >Dr.J.K. Saikia Homoeopathic Medical College,  P.O.-Cinnamara, Club Road, Jorhat, Assam-785008</option><option value="649" >Dr. Krishan Gopal Dwivedi Ayurvedic Medical College & Hospital, Sarmau, Jhansi, UP</option><option value="66" >Dr. Malkareddy (old HKE’s) Homoeopathic Medical Colleeg and Hospital, Medical Colleeg campus, Kalaburgi, Gulbarga-585105</option><option value="99" >Dr. M.L. Dhawale Memorial Homoeopathic Institute, Opp. S.T. Workshop, Palghar Boisor Road, Palghar-401 404 (M.S.)</option><option value="146" >Dr. M.P.K.Homeopathic Medical College, Hospital  & Research Centre,  Station Road,  Jaipur – 302 006.</option><option value="243" >Dr. N. R. Shastry Government Ayurved College, Vijaywada, Andhra Pradesh</option><option value="667" >Dr. O P Chaudhary Trust's Sardar Patel Institute of Ayurvedic Medical Science & Research Centre, Mohanlal Ganj, Lucknow - 226301, Uttar Pradesh</option><option value="83" >Dr.Padiar Memorial Homoeopathic Medical College & Hospital , Chottanikkara, P.B.No.1,Distt. Ernakulam – 682312.</option><option value="644" >Dr. Rajendra Prasad Memorial Educational Society Dehradun Doon Ayurvedic Medical College Sunderpur Saharanpur UP</option><option value="29" >Dr. Rambalak Singh Gaya Homoeopathic Medical College & Hospital, P.O.Amwa, Bodh Gaya, Gaya – 824231</option><option value="477" >Dr. R.N. Lahoti Ayurved Medical College & Hospital and Research Institute Sultanpur Buldhana MS</option><option value="473" >Dr. Vandanatai Jagannathrao Dhone Gramin Ayurved Mahavidyalaya, Patur, Maharashtra</option><option value="50" >Dr. V.H. Dave Homoeopathic Medical  College, Hahnemann House, Amul Dairy Road, Anand – 388001. </option><option value="626" >Dr. Vijay Ayurved Medical College Hospital & Research Centre Vill-Bhandhakala, Post Kaithi Varanasi U.P.</option><option value="26" >Dr. Yadubir Sinha Homoeopathic Medical College & Hospital, Laheriasarai Distt.Darbhanga – 846002</option><option value="681" >Eram Unani Medical College & Hospital, Kursi Road, Gudamba, Lucknow, Uttar Pradesh</option><option value="294" >Eva College of Ayurved, Supedi, Zanzmer Road Dist Rajkot Gujarat</option><option value="159" >Excel Homoeopathy Medical College, Ranganoor Road, Paalkapalayam Village, Sankari West psot-637303, Namakkal district, Tamil Nadu</option><option value="615" >Faculty of Ayurveda, Banaras Hindu University, Varanasi, Uttar Pradesh</option><option value="702" >Faculty of Ayurveda, Uttarakhand Ayurved University, Harrawala, Dehradun, Uttarakhand</option><option value="575" >Faculty of Ayurvedic Science, Jayoti Vidyapeeth Women’s University, Vedant Gyan Valley, Jharna, Mahalal Jobner Link Road, NH-8, Jaipur</option><option value="309" >Faculty of Indian Medical System, SGT University, Budhera, Gurgaon Haryana</option><option value="580" >Faculty of Sowa Rigpa, Namgyal Institute of Tibetology, Deurali, Gangtok-737102, Sikkim</option><option value="71" >Father  Muller’s Homoeopathic Medical College & Hospital,  University Road, Deralakatte, Mangalore – 575018.</option><option value="127" >Foster Developments  Homoeopathic Medical College, N-5,  CIDCO, Gulmohar Colony, Aurangabad - 431001.</option><option value="691" >Foundation for Social Care Hayat Complex, Hardoi Road, Sikori, Kakori Lucknow Hayat Unani Medical College & Research Centre Kakori Lucknow</option><option value="661" >Fulan Singh Jankalya Trust F S Ayurvedic Medical College Shikohabad Firozabad UP</option><option value="219" >Gandhi Natha Rangaji Homoeopathic Medical College, 13, Budhawar Peth, Jain Boarding Campus, Balives, Solapur-413 002</option><option value="493" >Ganga Education Society’s Ayurved Medical College, C/o Ganga Hospital, New Building, Rankalaves,Distt. Kolhapur , Maharashtra</option><option value="302" >Gangaputra Ayurvedic College, Kaithal Road, Kandela, Jind – 126102, Haryana</option><option value="651" >Gangasheel Ayurvedic Medical College & Hospital, Manpuriya Janaki Prasad, Kamua, Bilaspur Road Bareilly, Uttar Pradesh</option><option value="672" >Ganpati Charitable Trust Bhartiya Ayurvedic Medical College Gajraula J P Nagar UP</option><option value="307" >Gaur Brahman Ayurvedic Medical College, Rohtak, Haryana</option><option value="297" >Gaya Prasad Jain Charitable Trust, Amemdabad, Aarihant AMC, IFFCO-Sertha Road, Gandhinagar-382420 Gujarat</option><option value="24" >G.D. Memorial Homoeopathic Medical College and Hospital, East Ram Krishna Nagar, Patna – 800 020</option><option value="689" >Ghausia Unani Medical College & Hospital, Kanshmiripur, Deomai, Fatehpur, Uttar Pradesh</option><option value="632" >Glocal College of Ayurvedic Medical Science & Research Centre Saharanpur UP</option><option value="690" >Glocal Unani Medical College , Hospital & Research centre saharanpur U.P.</option><option value="136" >Godawari Foundation Dr. Ulhas Patil Homoeopathic Medical College, Godavari Hospital, M.J. College Road, Distt. Jalgaon-425001.</option><option value="298" >Gokul Ayurvedic College, Sujanpur, Patia, Sidhpur-384151 Distt Patan Gujarat</option><option value="122" >Gondia Homoeopathic Medical College & Hospital, Surya Tola ,Gondia-441614</option><option value="541" >Gopabandhu Ayurveda Mahavidyalaya, Puri, Orissa</option><option value="272" >Government Akhandananda Ayurveda Medical College, Ahmedabad, Gujarat</option><option value="426" >Government Autonomous Ayurved College, Gwarighat, Jabalpur, Madhya Pradesh</option><option value="718" >Government Ayurveda college and Hospital, Nagorao Shesh Bhawan, Juna Bilaspur-495001, Chhattisgarh</option><option value="581" >Government Ayurveda Medical College, Kottar, Nagercoil, Tamil Nadu</option><option value="319" >Government Ayurveda Medical College, Sayyajirao Road, Mysore, Karnataka</option><option value="406" >Government Ayurved College, Dhanwantri Nagar, Disstt. Ernakulam, Tripunithura Kerala</option><option value="609" >Government Ayurved College, Distt. Banda, Attara -210 201, Uttar Pradesh</option><option value="423" >Government Ayurved College & Hospital, Amkho, Lashkar, Gwalior, Madhya Pradesh.</option><option value="608" >Government Ayurved College & Hospital, Sampurnanand Sanskrit University, chauka Ghat, G.T. Road, Jagat Ganj, Varanasi - 221002 Uttar Pradesh</option><option value="116" >Government Ayurved College, Jalukbari, Guwahati, Assam</option><option value="404" >Government Ayurved College, MG Road, Thiruvanathapuram, Kerala</option><option value="405" >Government Ayurved College, Pariyaram, Kannur, Kerala</option><option value="425" >Government Ayurved College, Rewa, Madhya Pradesh</option><option value="467" >Government Ayurved College, Wazirabad, Dist. Nanded, Maharashtra</option><option value="468" >Government Ayurvedic College, Tuljapur Road, Osmanabad, Maharashtra</option><option value="318" >Government Ayurved Medical College, Dhanwantri Road, Bangalore, Karnataka</option><option value="546" >Government Ayurved Medical College, New Gurudwara, Moti Bagh, Patiala, Punjab</option><option value="421" >Government Dhanwantri Ayurveda College, Mangalnath Road, Ujjain, Madhya Pradesh</option><option value="175" >Government Homoeopathic Medical College and Hospital, Kasimpur Road, Chherat, Aligarh-202122.</option><option value="35" >Government Homoeopathic Medical College, Dethali, Taluka- Siddhapur, District- Patan, Gujarat</option><option value="605" >Government Nizamia Tibbia College, Charminar, Hyderabad, Telangana</option><option value="254" >Government Tibbia College, Kadam Kuan, Patna – 800 003 (Bihar).</option><option value="422" >Govt. Astanga Ayurvda Mahavidyalaya, Indore, Madhya Pradesh</option><option value="267" >Govt. Ayurveda College, Ajwa Road, Vadodara, Gujarat</option><option value="540" >Govt. Ayurveda College, Bolangir, Orissa</option><option value="700" >Govt. Ayurveda Medical College, Gurukul Kangari, Haridwar, Uttaranchal</option><option value="469" >Govt. Ayurveda Medical College & Hospital, P.O. Chincholi, Ajanta road, TQ& Distt. Jalgaon, Maharashtra- 425001</option><option value="613" >Govt. Ayurveda Medical College, Lucknow, Uttar Pradesh</option><option value="273" >Govt. Ayurveda Medical College, Nr. Geeta Cinema, Junagarh, Gujarat</option><option value="320" >Govt Ayurveda Medical College, Shivamoga Karnataka-577201</option><option value="203" >Govt. Ayurvedic College & Hospital, Kadam Kuan, Patna, Bihar</option><option value="465" >Govt. Ayurvedic College, Raje Raghuji Nagar, Umer Road, Sakkardara Chowk, Nagpur, Maharashtra</option><option value="744" >Govt Ayurved Medical College, Indira Chowk, Jammu, Jammu & Kashmir</option><option value="87" >Govt. Homoeopathic Medical College and Hospital,   MACT HILLS, AYUSH Campus, beside Kalia Sot Dam, Chuna Bhatti, Bhopal-462003 (M.P.)</option><option value="65" >Govt. Homoeopathic Medical College, Dr. Siddaiah Puranik Road, (Near Govt. Medical Stores, Basaweshwara Nagar, Bengaluru-560079.</option><option value="151" >Govt. Homoeopathic Medical College & Hospital, Thirumangalam, Distt. Madurai - 625 706.</option><option value="81" >Govt. Homoeopathic Medical College, Iranimuttom, Thiruvananthapuram -695009.</option><option value="82" >Govt. Homoeopathic Medical College, Karamparamba, Distt.Kozhikode – 673010.</option><option value="15" >Govt. Homoeopathic Medical College, Ravindra Nagar Post, Kadapa – 516 003</option><option value="701" >Govt. Rishikul Ayurved College, Haridwar, Uttaranchal</option><option value="268" >Govt. Seth JP Ayurveda Medical College, Bhavnagar, Gujarat</option><option value="588" >Govt. Siddha Medical College, Chennai</option><option value="590" >Govt. Siddha Medical College, Palayamkottai, Tirunelveli – 627 002, Tamil Nadu</option><option value="600" >Govt. Unani Medical College, Arumbakkam, Chennai, Tamilnadu</option><option value="397" >Govt. Unani Medical College, Dr. Siddaiha Puranic Road, Basaveshwaranagar Bangalore, Karnataka</option><option value="333" >G R Education Trust Karavali Ayurvedic Medical College Mangalore Karnataka</option><option value="635" >GS Ayurved Medical College & Hospital Hapur U.P.</option><option value="42" >Gujarat Homoeopathic Medical College, AT & P.O.Savli, Baroda -391770.</option><option value="112" >Gulabrao Patil Homoeopathic Medical College, 795, Gulabrao Patil Eductional Campus, Near Govt. Milk Dairy, Miraj, Distt.</option><option value="121" >Guru Mishri Homeopathic  Medical College & Hospital, Shelgaon, Tq Badnapur, Distt Jalna- 4310202 (M.S,)</option><option value="555" >Guru Nanak Ayurvedic Medical College & Hospital, Near Ajit Cinema, Barkandi Road, Muktsar, Punjab</option><option value="559" >Guru Nanak Ayurved Medical College & Research Institute, VPO Gopalpur, Distt. Ludhiana, Punjab</option><option value="93" >Hahnemann Homoeopathic Medical College & Hospital, New Jail Bye Pass Road, Karond, Bhopal - 462038.</option><option value="446" >Hakim Abdul Hamid Unani Medical College, Dewas, Madhya Pradesh</option><option value="688" >Hakim Rais Unani Medical College, Makhdoompur, Moradabad Road, Sambhal, Moradabad, UP</option><option value="445" >Hakim Syed Ziaul Hassan Government Unani Medical College, Science Hills, Behind MANIT, AYUSH Parisar, Bhopal-462003 Madhya Pradesh</option><option value="504" >Hanuman Shikshan Prasarak Mandal, Sawarde’s Ayurvedic Medical College, Peth Vadegaon, Tal. Hatkanangale, Distt. Kolhapur, Maharashtra</option><option value="705" >Haridwar Ayurvedic Medical College & Reserch Centre Haridwar, U.K.</option><option value="552" >Harmony Ayurvedic Medical College & Hospital Ferozpur Punjab</option><option value="359" >Hillside Ayurveda College at  Saldoddi, Agara Village, Kengri Hobli, Bangalore</option><option value="709" >Himalayiya Ayurvedic Medical College and Hospital at Shyampur, Dehradun</option><option value="441" >H K Kalchuri Educaiton Trust Bhopal L N Ayurvedic Medical College JK Town Kolar Road Bhopal MP</option><option value="400" >HMS Unani Medical College and Hospital, Tumkur, Karnataka</option><option value="143" >Homoeopathic Medical College, Abohar,Hanumangarh Road, Near bye pass,  Abhohar- 152 116.</option><option value="217" >Homoeopathic Medical College, Akot Road, Akola-444001</option><option value="31" >Homoeopathic Medical College  & Hospital, M-671, Sector-26, Chandigarh – 160 019.</option><option value="502" >Hon. Annasaheb Dange Ayurved Medical College, Ashta, Tal. Walwa,Distt. Sangli - 416 301, Maharashtra</option><option value="382" >Hyderabad Karnataka Development Education Trust's HKDET Rajarajeshwari Ayurveda Medical College, Humnabad, Bidar Karnataka</option><option value="684" >Ibn-e-Sina Tibbia College and Hospital, Azamgarh, Uttar Pradesh</option><option value="401" >Inamdar Unani Medical College & Hospital Sedam Road, Kalaburgi Karnataka</option><option value="282" >Indian Institute Of Ayurved Research & Hospital Opp Hill view Club Klawad Road Rajkot, Gujarat</option><option value="515" >Indira Bahuuddeshiya Shikshan Sansthan's Dr. Rajendra Gode Ayurvedic Medical College Amrawati Maharashtra</option><option value="543" >Indira Gandhi Memorial Ayurved Medical College & Hospital, Bhubneshwer, Orissa</option><option value="201" >Indira Gandhi Memorial Homoeopathic Medical College, 131 Prakash Nagar, Dhar-454001</option><option value="664" >Institute Of Ayush Medical Sciences, Vimlarjun Nagar, Lucknow, U.P.</option><option value="695" >Institute of Post-Graduate Ayurvedic Education & Research, Shyamadas Vaidya Shastra Pith.294/3/1, Acharya Prafulla Chandra Road, Kolkata, West Bengal</option><option value="269" >Institute of Post Graduate Teaching & Research in Ayurveda, Office to the Director Sushruta Bhavan, Gujarat Ayurved University, G.G. Hospital Road, Jamnagar, Gujarat</option><option value="5" >Institute of Training and Research in Ayurveda (ITRA)</option><option value="535" >Iqra Society’s Unani Medical College, Iqra Nagar, Mohdi Shivar, Gate No.25/2, Shirsoli Road,  Jalgaon, Maharashtra</option><option value="621" >Ishan Educational Research Society Ishan Ayurvedic Medical College & Research Centre Knowledge park NOIDA</option><option value="363" >Islamia Education Trust Zakaria Ayurved College, Gulbarga, Karnataka</option><option value="271" >ITRA, Jamnagar, Gujarat - 361008</option><option value="529" >Jai Shri Siddhivinayak Foundation Thane,  B.R. Harne Ayurvedic Medical College, Ambernath, Thane - 421503 Maharashtra</option><option value="162" >Jaisoorya Potti Sreeramulu Govt.Homoeopathic Medical College, Ramanthapur, Hyderabad-500 013</option><option value="683" >Jamia Tibbia Deoband, Deoband, GT Road, Deoband, Distt. Saharanpur, U.P.</option><option value="221" >Jamkhed Homoeopathic Medical College, Ratnapur Taluka, Jamkhed District, Ahmednagar, Maharashtra.</option><option value="745" >Jammu Institute of Ayurved & Research, Nardhani Raipur, Ban Talab Road, Jammu Tawi,-181123 Jammu & Kashmir</option><option value="118" >Janseva Mandal’s Sai Homoeopathic Medical College,Dugad Phata, Tq.Bhiwandi, Distt. Thane</option><option value="663" >Jassar Dental Medical Education Health Foundation Divya Jyoti Ayurvedic Medical College Modi Nagar Ghaziabad UP</option><option value="46" >Jawahar Lal Nehru Homoeopathic Medical College & Hospital, Parul Institute, P.O.Limbda,Ta. Waghodia District,Vadodara Pin-391760</option><option value="54" >Jay Jalaram Homoeopathic Medical College, At & PO- Morva (Rena), TA-Shahera, District- Panchmahal, Gujarat-389001.</option><option value="290" >Jayka Jansahayak Trust K J Institute of Ayurveda Research Vadodara Gujarat</option><option value="694" >JB Roy State Ayurvedic Medical College & Hospital, 170-172, Raja Dinendra Street, Kolkata, West Bengal</option><option value="645" >J. D. Ayurvedic Medical College & Hospital, Aligarh by All India J. D. Educational Society</option><option value="659" >Jeevak Ayurved Medical College & Hospital Chandauli U.P.</option><option value="623" >Jeevan Jyoti Ayurvedic Medical College & Hospital, 10th KM Mile Stone, Khair Road, Lodha, Aligarh U.P.</option><option value="164" >Jeeyar Integrated Vwedic Academy, Sri Ram Nagar, Muchintal Road, palmakol P.O, Shamshabad, Hyderabad, Telangana- 509325</option><option value="62" >JR Kisan Homeopathic Medical College & Hospital ,Rohtak-124001</option><option value="572" >JR's Tantia Shri Ganganagar College of Ayurvedic Sciences,  Sri Ganganagar, Rajasthan</option><option value="274" >JS Ayurveda Mahavidyalaya, Nadiad, Gujarat</option><option value="378" >JSS Ayurveda Mahavidyalaya, Shree Shivaratheeshwara Nagar, Mysore, Karnataka</option><option value="475" >Jupiter Ayurved Medical Collage & Tarini Ayurved Hospital, Nagpur , Maharashtra</option><option value="102" >Kaka Saheb Mhaske  Homoeopathic Medical College & Hospital & P.G. Institute  , Nagapur, Bolhegaon Phata,  Ahmednagar – 414111.</option><option value="569" >Kala Ashram Ayurveda Medical College and Hospital, NHW-27, Village- Bansada, The- Gogunda, Distt-Udaipur- Rajasthan</option><option value="629" >Kalawati Smriti Charitable Society Kalawati Ayurvedic Medical College Gorha Kasganj U.P.</option><option value="236" >Kalyan Homoeopathic Medical College & Hospital, Jandiala Road, TarnTaran- 143 401.</option><option value="34" >Kamaxi Devi Homoeo.Medical College & Hospital, Shiv-Shail, Karai Shiroda,-Goa-403103</option><option value="189" >Kamdar Homoeopathy Medical College & Research Centre, Haripar Pal Survery No.12, Behind NRI Bungalows, Opp. Delhi Public School, Kalawad Road, Rajkot-360007.</option><option value="352" >Kannada Balag Society’s Rural Ayurved Medical College, Auto Nagar, Belgaum, Karnataka</option><option value="450" >Karmvir Vyanketrao Tanaji Randhir Ayurved College, Boradi, Tal. Shirpur, Dhule – 425 428, Maharashtra</option><option value="329" >Karnataka Ayurveda Medical College, Mangalore, Karnataka</option><option value="339" >Karnataka Liberal Education (KLE) Society’s Shri BM Kankanwadi Ayurved Medical College, Shahapur, Belgaum , Karnataka</option><option value="748" >Kashmir Tibbia College Hospital & Research Centre, Taleemabad Shilvath Sonawari, Tehsil Sumbhal, District Bandipora, Srinagar, J&K</option><option value="539" >KATS Ayurved Medical College, Ankushpur, Ganjam, Orissa</option><option value="495" >KDMG’s Ayurved Medical College, Opp. To Kharatmal Petrol Pump, Kargaon Shivar, Dhule Road, Chalisgaon - 424101, Distt. Jalgaon , Maharashtra</option><option value="28" >Kent Homeopathic Medical College, At & PO Khilwat, Vaishali-844516</option><option value="128" >K.E.S C.H.Keluskar  Homoeopathic Medical College & Hospital, Alibag, Distt. Raigad-402 201.</option><option value="113" >KES, LADP  Homoeopathic Medical College & Hospital, Bhatwadi, Balasaheb Khardekar Road, Vengurla, Sindhudurg-416516.</option><option value="561" >Khalsa Rural Medical Society Khalsa Ayurvedic Medical College Mansa Punjab</option><option value="733" >Kharagpur Homoeopathic Medical College and  Hospital, Kausallya, P.O. Kharagpur, District Paschim Medinipur -721301</option><option value="537" >Khatoon Minority Women's Social Welfare & Educational Trust's Al-ameen Unani Medical college & Hospital, Sayne Khurd, Malegaon, Maharashtra</option><option value="222" >Kisan Dnyanoday Mandal's Homoeopathic Medical College & Hospital,Nimzari Road Shirpur,Dhule - 425405.</option><option value="18" >KKC Homoeopathic Medical College, 1-52, KKC Nagar, Parameswara Mangalam, Puttur, Andhra Pradesh</option><option value="69" >KLE Academy of Higher Education & research, JNMC Campus, Nehru Nagar, Belagavi-590010, Karnataka.</option><option value="409" >KMCT Ayurvedic Medical College at Manessary, Kozhikode, Kerala</option><option value="182" >K.N.H Homoeopathic. Medical College & Hospital, Mayaganj, Bhagalpur-812001</option><option value="218" >Konkan Education & Medical Trust's  Virar Homoeo. Medical College , Veer Savarkar Marg, Virar(E), Tal-Vasai, Distt. Thane - 401305</option><option value="96" >K.S.Homoeopathic Medical College, Gwalior, Madhya Pradesh</option><option value="367" >KTG Ayurved Medical College & Hospital Sunkadakatte-Peenya Road Vishwaneedma Post Bangalore Karnataka</option><option value="641" >Kunwar Shekhar Vijendra Ayurved Medical College & Research Centre, Gangoh, Distt- Saharanpur, Uttar Pradesh</option><option value="662" >K.V. Ayurvedic Medical College & Dev Hospital Kuberpur Agra, U.P.</option><option value="327" >KVG Ayurved Medical College & Hospital, Ambatedka, Kurunji Bag, Sulliya – 574 327, Distt. Dakshin Kannada, Karnataka</option><option value="628" >K V S Sansthan KVS Institute of Ayurvedic Medical Sciences & Research Centre Ghazipur UP</option><option value="204" >Lal Bahadur Shastri Homoeopahic Medical College and Hospital, Misrod,  Ratanpur, Hoshangabad Road,  Bhopal-462047</option><option value="301" >Lal Bahadur Shastri Mahila Ayurvedic College & Hospital, Sadhaura Road Bilaspur, Dist- Yamuna Nagar Haryana</option><option value="611" >Lal Bahadur Shastry Rajakiya Ayurveda Mahvidyalaya, Handia, Allahabad, Uttar Pradesh</option><option value="38" >Lalitaben Ramniklal Shah Homoeopathy Medical College & Hospital, Rajkot, Gujarat.</option><option value="474" >Late Kedari Redekar Ayurveda Mahavidyalaya, P-2, MIDC Area, Teh. Gadhinglaj, Distt Kolhapur – 416 502 , Maharashtra</option><option value="140" >Late Mrs. Housabai Homoeopathic Medical College & Hospital, Nimishirgaon, Kolhapur District, Maharashtra</option><option value="503" >Late Shri Babruwan Vithalrao Kale Ayurved Medical College & Hospital, Behind Bus Stand, Ghandhi Maidan, Tq. Latur, Maharashtra</option><option value="391" >Latthe Education Society’s Acharya Desh Bhusan Ayurveda Medical College, Bedkihal, Karnataka</option><option value="186" >Laxmiben Homoeopathy Institute & Research Centre, Lalji Park, Unjha-Mehsana Highway, At and PO-Bhandu-384120, Ta-Visanagar, Distt. Mehsana, (North Gujarat)</option><option value="137" >L.M.F. Homoeopathic Medical College, Near elpro Company, Behind PCMC  Auditorium, Chinchwad,  Pune – 411033.</option><option value="524" >Loknete Rajarambapu Patil Ayurvedic Medical College, Islampur, Tal. Walwa, Distt. Sangli-415 409, Maharashtra</option><option value="238" >Lord Buddha Homoeopathic Medical College & Hospital, Distt G.B Nagar, Uttar Pradesh</option><option value="142" >Lord Mahavira Homoeopathic Medical College & Hospital, Dr. Hahneman Chowk, Kitchlu Nagar, Civil Lines, , Ludhiana – 141001.</option><option value="498" >Lt. Sunil Ramsingh Chunawala Ayurvedic College, Chikhli, Maharashtra</option><option value="398" >Luqman Unani Medical College & Hospital, BL Karadi Campus12, Naubag, Bijapur – 586 101, Karnataka</option><option value="147" >Madhav Homoeopathic Medical College and Hospital, Madhav Hills, Sirohi, Rajasthan.</option><option value="179" >Magadh Homoeopathic Medical College & Hospital, Beharsharief, Station Road, Nalanda – 843 101</option><option value="345" >Mahaganapati Ayurvedic Medical College, Hoysalnagar, Distt. Dharwad, Karnataka.</option><option value="215" >Mahalaxmi Homoeopathic Medical College and Hospital and Research Cnetre, at Post Raigaon, Tal-Jaoli, District-Satara, Maharashtra.</option><option value="16" >Maharaja’s Institute of Homoeopathic Sciences, D. No. 31-15,  Nellimarla, Vizianagaram-535217, Andhra Pradesh</option><option value="737" >Maharana Pratap Homoeopathic Medical College, Near Rishab Enclave, Imlidih, New Rajender Nagar, Raipur-492001</option><option value="488" >Maharashtra Arogya Mandal’s Sumati Bhai Shah Ayurved Mahavidyalaya, Hadapsar, Pune, Maharashtra</option><option value="25" >Maharshi Mahi Homeopathic Medical College & Hospital , Katihar</option><option value="470" >Mahatma Gandhi Ayurveda College, Hospital and Research Centre at Sawangi, Wardha by Datta Meghe Institute of Medical Sciences (Deemed University), Nagpur, Maharashtra</option><option value="91" >Mahatma Gandhi Homoeopathic Medical College & Hospital, Delite Talkies Campus, Near Main Railway Station, South Civil Lines, Jabalpur(MP)</option><option value="567" >Mahatma Jyotiba Fule Ayurved Mahavidyalaya, Sikar Road, Harota, Chomu,Jaipur, Rajasthan</option><option value="675" >Mahaveer Ayurved Medical College & Hospital Sardhana Road Meerut UP</option><option value="484" >Mahesh Ayurvedic College, Ashti, Beed, Maharashtra by Shetkari Shikshan Prasarak Mandal</option><option value="727" >Mahesh Bhattacharya Homoeopathic Medical College and Hospital, H.I.T.Road , Ichapur, Doomurjala, Howrah -711101.</option><option value="521" >Mahila Utkarsh Pratisthan’s Ayurveda College, Hospital and Research Centre, Degaon, Tq. Risod, Washim, Maharashtra</option><option value="554" >Mai Bhago Ayurvedic Medical College and Hospital for Women, Muktsar, Punjab</option><option value="655" >Major S. D. Singh Ayurvedic Medical College and Hospital at Fatehgarh, Distt. Farukhabad</option><option value="437" >Mandsaur Institute of Ayurveda and Research, Mandsaur, M.P. by Bhanwarlal Nahata Smriti Sansthan Mhow-Neemuch Road, Bhanwarlal Nahata Marg. Mandsaur (M.P.)</option><option value="144" >Mangilal Nirban Homoeopathic Medical College & Research Instt., M.N. Hospital Campus, Near Dr. Karan Singh Stadium, Bikaner-334001</option><option value="183" >Mangla Kamla Homoeopathic Medical College & Hospital, Prof. Vishnu Kumar Marg, Srinagar, Siwan-841226</option><option value="289" >Manjushree Research Institute Of Ayurved Science Gandhinagar Gujarat</option><option value="415" >Mannam Ayurved Co-operative Medical College, Pandalam, Kerala</option><option value="439" >Mansarovar Ayurvedic Medical College, Village- Hinotia Alam, Kolar Road, Bhopal- 462042, Madhya Pradesh</option><option value="582" >Maria Ayurveda Medical College, Kulathadivilai, Thivrvattar, Kanyakumari, Tamil Nadu.</option><option value="155" >Maria Homoeopathic Medical College & Hospital, Perai, Thiruvattar, kanyakumari, Tamil Nadu- 629177.</option><option value="597" >Maria Siddha Medical College, Thottavarram Kanyakumari, T.N.</option><option value="420" >Markaz Unani Medical College & Hospital, Puthuppadi, Kozhilode, Kerala</option><option value="227" >Martin (Nethra) Homoeopathy Medical College & Hospital, DPF Complex, 54,  Mettu Palayan Road,Thudialur Coimbatore – 641 029</option><option value="508" >Matoshri Asarabai Darade Ayurved College at Babhulgaon, Tal-Yeola, Distt-Nashik-423401 Maharashtra</option><option value="544" >Mayurbhanj Ayurveda College, Takatpur, Baripada, Dist Mayurbhanj- 7570003 Odisha</option><option value="743" >Mayurbhanj Homoeopathic Medical College & Hospital, Baripada, Mayurbhanj – 757001.</option><option value="61" >Merchant Homoeopathy Medical College and Hospital, Mehsana, Gujarat</option><option value="525" >M.E.S. Ayurved Mahavidyalaya, Ghanekunt-Lote, Tal. Khed, Distt. Ratnagiri, Maharashtra by Maharashtra Education Society, Sadashiv Peth, Pune, Maharashtra.</option><option value="725" >Metropolitan Homoeopathic Medical College & Hospital, Ramchandrapur Sodepur, Kolkata – 700 010</option><option value="212" >MHF’s Homoeopathic Medical College & Hospital,  Chandanpuri Ghat, Gunjalwadi Pathar, Sangamner, Distt- Ahmednagar – 422 620.</option><option value="56" >Midnapore Homoeopathic Medical College and  Hospital., Midnapore – 721104.</option><option value="566" >MMM Govt. Ay. Mahavidyalaya, Ambernath Road, Udaipur - 313 001, Rajasthan</option><option value="604" >MNR Ayurvedic Medical College, MNR Nagar, Narsapur Road, Fasalwadi, Sangareddy, Medak Distt.-502294 Andhra Pradesh by the M.N.R Educational Trust</option><option value="165" >MNR Education Trust, Bhagyanagar Colony, Madhapur, Hyderabad, Telangana 500081</option><option value="531" >Mohammadia Tibbia College& Assayer Hospital, PB No. 128, Mansoora, Malegaon Distt. Nasik 423203, Maharashtra</option><option value="723" >Mohsine Millat Unani Unani Medical College, Mahboobiya Chowk, Baijnath Para, Raipur-492001 Chhattisgarh</option><option value="6" >Morarji Desai National Institute of Yoga (MDNIY)</option><option value="703" >Motherhood Ayurvedic Medical College Kroundi Roorkee Haridwar UK</option><option value="252" >Motisingh Jageshwari Ayurved College & Hospital Baratelpa, Chhapra, Bihar</option><option value="115" >Motiwala Homoeopathic Medical College & Hospital, Motiwala Nagar,Gangapur-Satpur Link Road, Gangapur, Nashik – 422 222.</option><option value="335" >Muniyal Institute of Ayurveda Sciences, No. 34-C, Shivali Industrial Area,  Manipal, Udupi,Karnataka</option><option value="308" >Murarilal Rasiwasia Ayurvedic College, R.K. Gupta Marg, Charakhi Dadri – 127 306, Haryana</option><option value="184" >Muzaffarpur Homoeopathic Medical College, Raghu Nath Pandey Nagar, MIC Bela, Muzaffarpur</option><option value="527" >Nagar Yuwak Shikshan Sanstha, Datta Meghe Ayurvedic Medical College, Wanadongari, Nagpur MS- 440022</option><option value="241" >Nagpur College of Homoeopathy and Bio-Chemistry, Hospital, 543, Azamshah Layout,Great Nag Road, Nagpur - 440 009.</option><option value="229" >Naiminath Homeopathy Medical College,  Hospital & Research Centre, NH -2, Village :- Nawalpur, Tehsil - Etmadpur, Agra, U.P.-283206</option><option value="471" >Nalasopara Ayurved Medical College, (Swargiya Shri Suresh Nursingh Dube) PO Nalasopara, Tal. Vasai –Distt. Thane, Maharashtra</option><option value="313" >Nangelil Ayurved College, Nalli Kuzhi PO Kothamangalm, Ernakulam Distt. Nangelil, Kerala</option><option value="88" >Narayan Shree Homoeopathic Medical College & Hospital , Pushpa Nagar, Near Bhopal Railway Station, Bhopal - 462 010</option><option value="305" >National Ayurved College Dhari Gram Road, Barwala Hisar.</option><option value="84" >National Homoeopathy Research Institute in Mental Health (NHRIMH) at CRI (H), Kottayam, Kerala</option><option value="1" >National Institute of Ayurveda (NIA)</option><option value="564" >National Institute of Ayurved, Jaipur, Rajasthan</option><option value="724" >National Institute of Homoeopathy, Block GE, Sector III,  Salt Lake , Kolkata – 700106</option><option value="2" >National Institute of Homoeopathy (NIH)</option><option value="3" >National Institute of Naturopathy (NIN)</option><option value="589" >National Institute of Siddha, Chennai</option><option value="7" >National Institute of Siddha (NIS)</option><option value="396" >National Institute of Unani Medicine, Kottigepalya, Magadi main road, Bangalore- 560091.</option><option value="4" >National Institute of Unani Medicine (NIUM)</option><option value="606" >National Research Institute of Unani Medicine for Skin Disorders formerly (CRIUM), Opp ESI Hospital, AG Colony road, Erragadda, Hyderabad- 500038 Telangana</option><option value="32" >Nehru Homoeopathic Medical College & Hospital,  B-Block, Defence Colony, N. Delhi-110024</option><option value="538" >NEIAH, Shillong</option><option value="729" >Netai Charan Chakravarty Homoeopathic Medical College & Hospital, 45, F Road, Belgachia 106-107, Joynarayan Babu  Ananda Dutta Lane, Howrah – 711 101.</option><option value="286" >Netra Chikitsa Trust Netra Chikitsa Ayurved College Chittal Road Amreli Gujarat</option><option value="576" >Nirogdham Jan Kalyan Seva Sansthan, Aklera, Jhalawar, Keshav Ayurveda Medical College & Hospital, Aklera, Jhalawar- 326033 Rajasthan</option><option value="251" >Nitishwar Ayurved Medical College & Hospital, Bawan Beegha, Kanholi, PO Ramna, Muzaffarpur - 842 002, Bihar</option><option value="256" >Nizamia Unani Medical Collge & Hospital,  Distt.-Gaya, Bihar.</option><option value="372" >NK Jabashetty Siddharudh Math Ay. Medical College,  Manhalli Road, Bidar – 585 103, Karnataka</option><option value="41" >Nobel Homoeopathic Medical College And Research Institute, Junagadh, Gujarat</option><option value="131" >Nootan Homoeopathic Medical College & Hospital, Gat. No-412, Landgewadi, Tal.Kavethemahankal, Sangli, Maharashtra.</option><option value="10" >North Eastern Institute of Ayurveda and Homoeopathy (NEIAH)</option><option value="11" >North Eastern Institute of Folk Medicine (NEIFM)</option><option value="19" >North East Homoeopathic  Medical College & Hospital, Vivek Vihar, P.O. R.K.Mission, Itanagar-791113</option><option value="141" >North East Institute of Ayurveda and Homoeopathy, Shillong</option><option value="739" >Odisha  Medical College of  Homoeopathy & Research, Majhipali, Sasan,  Distt.Sambalpur – 768 200.</option><option value="440" >Om Ayurveda Medical College, Betul, Madhya Pradesh</option><option value="712" >Om Ayurved Medical College & Research Centre Daulatpur Roorkee Haridwar U.K.</option><option value="652" >Pacific College of Ayurved & Research Centre, Lacchipur Industrial Area, Gorakhpur, Uttar Pradesh</option><option value="506" >Pad. Dr. D. Y.  Patil College of Ayurveda & Research, Navi Mumbai, Maharashtra by Pad. Dr. D. Y.  Patil Deemed University, Navi Mumbai</option><option value="138" >Panchsheel  Homoeopathic Medical College & Hospital, Civil Line, Khamgaon, Distt.- Buldhana - 444 303.</option><option value="416" >Pankajakasthuri Ayurveda Medical College, Killy, Kattakada, Thiruvananthapuram –695 572, Kerala</option><option value="228" >Param Himalaya Homoeopathic Medical College and Hospital and Research Centre, Dehradun.</option><option value="438" >Parashar Science & Technology Education Society Parashar Ayurvedic Medical College Bhopal MP</option><option value="414" >Parrasianikkadavu Ayurveda Medical College, PO Parassiaikkadavu, Distt. Kannur – 670 563</option><option value="573" >Parsurampuria Ayurveda College, Sikar, Rajasthan</option><option value="280" >Parul Institute of Ayurveda, Limda, Waghodia, Vadodara-Gujarat</option><option value="291" >Parul Institute of Ayurved & Research, P.O. Limda, Tal. Waghodia, Distt. Vadodara - 391760 Gujarat</option><option value="47" >Parul Institute of Homoeopathy and Research, at Ishwarpura, P.O.Limbda,Ta. Waghodia District,Vadodara Pin-391760</option><option value="710" >Patanjali Bhartiya Ayurvigyan Avam Anusandhan Sansthan at Patanjali Yogpeeth, Maharishi Dayanand Gram, Near Bahadrabad, Haridwar By Divya Yoga Mandir (Trust), Patanjali Yogapeeth, Haridwar</option><option value="30" >Patna Homoeopathic Medical College & Hospital Ram Krishna Nagar, Sorangpur, Patna -800027</option><option value="489" >P.D.E.A.’s College of Ayurveda & Research Centre, Akurdi, Pune, Maharashtra</option><option value="134" >P.D.Jain Homoeopathic Medical College & Hospital, Vakil  Colony, Parbhani - 431401.</option><option value="55" >(Pioneer) M.S. Pathak Homoeopathic Medical College & Hospital (OM Gayatri Charitable Trust), Ist Floor, Crystal Plaza, Gotri Main Road, Vadodara -390021</option><option value="410" >PNNM Ayurveda Medical College, Shoranur, P.O. Cheruthuruthy, Taluk Thalappilly, Dist. Thrissur, Kerala</option><option value="408" >P.N. Panicker Sauhruda Ayurveda Medical College at Parakalai, Kanhangad, Kasaragod, Kerala</option><option value="648" >Prabudh Ayurvedic Medical College, Hospital & Research Centre, Gram-Bakka Khera, Mall Malihabad Road, Lucknow, Uttar Pradesh</option><option value="619" >Prakash Institute Of Ayurvedic Medical Sciences and Research Centre Jhajjar Bulandshahar U.P.</option><option value="374" >Prasanna College of Ayurveda and Hospital Lavila, Belthangady, Karnataka</option><option value="734" >Pratap Chandra Memorial Homoeopathic Medical College and Hospital, 14/1, Mahanam Brata Sarani (N.N.Road), Kolkata - 700 011</option><option value="501" >Pravara Medical Trust’s Ayurved College & Shri Eknath Ayurved Rugnalaya, Shevgaon, Akhegaon Road, Shevgaon, Ahmednagar 414502 Maharashtra</option><option value="631" >Prem Raghu Ayurved Medical College & Hospital Agra Road, Hathras U.P.</option><option value="296" >Prerna Charitable Trust, Jay Jalaram Ayurvedic Medical College, Godhra, Panchmahal, Gujarat-388713</option><option value="211" >PSPM Mahila Homoeopathic Medical College, Kolgiri Nagar, Hotgi Road, Majrewadi, Solapur-  413 007</option><option value="239" >Pt. Jawahar Lal Nehru Memorial Institute of Homoeopathic Medical Sciences, Badnera Road, Amrawati-444605</option><option value="170" >Pt. Jawharlal Nehru State Homoeopathic medical College, Block – A/1, Scheme – 38,  Lakhanpur, Kalyanpur, Kanpur, UP</option><option value="427" >Pt. Khushilal Sharma Government Ayurved College and Institute, Bharat Scout & Guide Building, Shyamala Hills, Bhopal-462 002, Madhya Pradesh</option><option value="424" >Pt. Shivnath Shastri Autonomous Govt. Ayurveda Medical College, Burhanpur, Madhya Pradesh</option><option value="443" >Pt. Shivshaktilal Sharma Ay Mahavidyalaya, Ratlam, Madhya Pradesh</option><option value="568" >Punjab Ayurved Medical College, Sri Ganga Nagar Rajasthan</option><option value="123" >Purushottam Das Bagla Homoeopathic Medical College and Hospital, Bagla Nagar, Babupeth, Chandrapur – 442 403.</option><option value="704" >Quadra Institute of Ayurveda, Roorkee- Haridwar Road, NH-58, Roorkee, Distt- Haridwar, Uttrakhand</option><option value="697" >Raghunath Ayurved Mahavidyalaya and Hospital at Contai, Dist. Purba Medinipur- 721401, W.B.</option><option value="735" >Raipur Homoeopathic Medical College & Hospital., Near Shitla Mandir, Ramkund, Chaube Colony, Raipur - 492 001</option><option value="640" >Raizada Foundation Chandrashekhar Singh Ayurved institute  Saiyad Saraya  Kaushambi UP</option><option value="579" >Rajasthan Unani Medical College & Hospital, Dravid Nagar,  Opp. Jagdamba Colony Paladi Meena, Agra Road, Jaipur, Rajasthan</option><option value="145" >Rajasthan Vidyapeeth  Homoeopathic Medical College Vidyapeeth Campus, Dabok,Udaipur-313 022</option><option value="394" >Rajeev Education Trust Hassan, Rajeev Institute of Ayurvedic Medical Science, Hassan, Karnataka</option><option value="545" >Rajiv Gandhi Ayurveda Medical College and Hospital, Chalakkari Village, Mahe  -673311 by Puducherry Medical College Society, Kathirkamam, Puducherry</option><option value="444" >Rajiv Gandhi Ayurved Mahavidyalaya, E-8, Trilanga Colony, Distt. Shahpur, Bhopal, MP</option><option value="355" >Rajiv Gandhi Education Society Ayurvedic Medical College, Ron, Karnataka</option><option value="310" >Rajiv Gandhi Government Postgraduate Ayurvedic College, Paprola, HP</option><option value="721" >Rajiv Lochan Ayurved Chikitsa Mahavidyalaya, Kheda Mara, PO Dhour, Distt. Durg, Chhatisgarh</option><option value="247" >Rajkiya Ayodhya Shivkumari Ayurved Mahavidyalaya, Begusarai, Bihar</option><option value="616" >Rajkiya Lalit Hari Ayurveda College & Hospital, Pilibhit- 262 001, Uttar Pradesh</option><option value="45" >Rajkot Homoeopathic Medical College, Behind Jainath Petrol pump, Gondal Road, Rajkot-360002</option><option value="578" >Rajputana Unani Medical College Hospital & Research Centre, Mundota House, Khandar Ka Rasta, Subhash Chowk,  Jaipur-302 002, Rajasthan</option><option value="242" >Ramachandra M.S. Sanstha's Homoepathic Medical College, Gandhingala Jn. District-Kolhapur</option><option value="387" >Ramakrishna Ayurvedic Medical College Hospital & Research Centre, No.54/2, Ramagondanahalli,Yelahanka, Bangalore-560064</option><option value="479" >Ramarao Patil Ayurved Mahavidyalaya & Rugnalaya, Purna Tq. Purna Distt. Parbhani, Maharashtra</option><option value="429" >Rani Dullaiya Smriti Ayurveda Mahavidyalaya Avum Chikitsalaya, Bhopal, Madhya Pradesh</option><option value="95" >Rani Dullaiya Smriti Homoeopathy Medical College and Hospital, Bhopal,Barkhedi kalan Bhadbhada Road, Bhopal.</option><option value="466" >RA Podar Ayurved Medical College, Dr. Annie Besant Road, Worli, Mumbai, Maharashtra</option><option value="8" >Rashtriya Ayurveda Vidyapeeth (RAV)</option><option value="253" >Ravindranath Mukherjee Ayurveda college, Motihari, East Champaran, Bihar</option><option value="665" >R.B. Ayurvedic Medical College & Hospita, Jalesar Road, Agra U.P.</option><option value="23" >R.B.T.S. Govt. Homoeopathic Medical College & Hospital, Ramdayalu Nagar . P.O. Ramna, Muzaffarpur – 842 002.</option><option value="181" >R.D.Kedia Homoeopathic Medical College & Hospital, P.O.Hanuman Sugar Mills, Bariyapur, Motihari, East Champaran,</option><option value="563" >Rehbar Ayurvedic & Unani Tibbi Medical College,H & Research Centre, Bhagwangarh, Sangrur, Punjab</option><option value="458" >RJVS Bhai Sahib Sawant Ayurveda Mahavidyalaya, Sawantwadi, Sindhudurg, Maharashtra</option><option value="654" >R.K. Ayurvedic Medical College & Hospital Azamgarh U.P.</option><option value="90" >R.K.D.F Homoeo.Medical College, Hospital & Research Centre, NH-12, Hoshangabad Road, Bhopal</option><option value="210" >R. N. Kapoor Homoeopathic Medical College, Indore-Dewas Bypass Road,  A  P J Abdul Kalum Vill - Arandia, Indore, MP -452016.</option><option value="715" >Roopchand Sharma Education Trust Dehradun Road Roorki Bishamber Sahai Ayurvedic Medical College, Delhi Dehradun Highway Roorkee, Haridwar Uttarakhand</option><option value="72" >Rosy Royal Homoeopathic Medical College & Hospital, Mallapura, Nelamangala, Bangalore-562162, Karnataka</option><option value="321" >RRIUM, Sri Nagar J&K</option><option value="510" >Rural Institute of Ayurveda & Research Centre at Mayani, Satara, Maharashtra by Sri Chhatrapati Shivaji Education Society</option><option value="160" >R.V.S. Homoeopathic Medical College, 242 B Trichy Road, SULUR Coimbatore – 641 402</option><option value="591" >R.V.S. Siddha Medical College, Sulur, Coimbatore By R.V.S. Medical Trust</option><option value="233" >Sagar Homoeopathic Medical College, Hospital, By Pass Pagara Road, Bhainsa, Sagar -470001</option><option value="120" >Sahakar Maharshi (Baliraja Shikshan Prasarak Mandal’s) Padmashri Shyamraoji Kadam Homoeopathic Medical College, CIDCO, New Nanded – 431603</option><option value="514" >Sai Ayurved College & Hospital Gate No. 67 Sarure-Vairag Dhengale Patil Nagar, Barshi, Solapur Maharashtra</option><option value="448" >Saifia Hamidia Unani Tibbia College & Hospital, Near Ganapati Nake, Burhanpur, Distt. Khandwa -450 331, Madhya Pradesh</option><option value="551" >Saint Sahara Ayurvedic Medical College, Bhatinda, Punjab by Saint Sahara Educational Society, Muktasar, Punjab</option><option value="255" >Salfia Unani Medical College & Hospital At & Post Laheriasarai, Distt. Darbhanga – 846 001, Bihar</option><option value="187" >Samarpan Charitable and Educational Medical & Research Trust's Shri Bachubhai Alabhai Danger Homoeopathic Medical College, Opp. I.O.C. Depot, Jamnagar Road, Rajkot-360007.</option><option value="124" >Samarth Edu. Trust's Homoeopathic Medical College &  Hospital A.M.1/1 Additional MIDC Dagaon Road Satara - 415004</option><option value="490" >Sangam Sevabhavi Trust’s Ayurved Mahavidyalaya, Poona Nasik Road, Sangamner, Maharashtra</option><option value="637" >Sanjeevani Ayurvedic Medical College Khudana, Chak Nr. Brijghat Amroha UP</option><option value="528" >Sanjeevani Multi Purpose Foundation Kolhapur MS, Dr. Deepak Patil  AMC & H, Kolhapur MS</option><option value="692" >Sanskriti Society for Education Research & Development Chhata Mathura Sanskriti Unani Medical College Chhata Mathura UP</option><option value="670" >Sanskriti Society for Education Research & Development Sanskriti Ayurvedic Medical College Chhata Mathura UP</option><option value="283" >Sanskruti Educational Trust Bhargava Ayurvedic Medical College Anand Gujarat</option><option value="526" >Sant Gajanan Maharaj Rural H & Res. Centre, Sant Gajanan Maharaj Ayurvedic Medical College, Kolhapur MS</option><option value="413" >Santhigiri Ayurved Medical College, Olassey PO, Palakkad – 678 551, Kerala</option><option value="419" >Santhigiri Siddha Medical College, PO Koliyacode, Thiruvananthapuram – 695 607</option><option value="658" >Santushti Ayurvedic Medical College & Hospital, Village Hinauti, Dagmagpur, Distt- Mirzapur, Uttar Pradesh</option><option value="152" >Sarada Krishna Homoeopathic Medical College, Kulasekharam, Distt.Kanyakumari - 629161</option><option value="547" >Saraswati Ayurvedic Medical College & Hospital Gharuan, SAS Nagar Mohali Punjab</option><option value="633" >Satish Chandra Pandey Memorial Sewa Santhan SCPM Ayurvedic Medical College Lucknow road Haripur Gonda UP</option><option value="135" >Sayali Charitable Trust College of Homoeopathy, Gut No. 141, 150, 55, Mitmita, Nashik Road, Aurangabad, Maharashtra.</option><option value="263" >School of Unani Medical Education and Research, Jamia Hamdard, (Deemed University), Hamdard Nagar , New Delhi-110062</option><option value="388" >SDM Jain Matt Trust Navgrahteerth Varur Dharwad Jain AGM Ayurvedic Medical College Varur-Chabbi Dharwad</option><option value="322" >S.D.M. Trust’s Ayurvedic Medical College and Hospital at Terdal, Karnataka</option><option value="206" >Sendhwa Homoeopathic Medical College & Hospital, Niwali Road, Sendhwa, Distt. Barwani- 451 666</option><option value="464" >Seth Chandanmal Mutha Aryangla Vidyak Mahavidyalaya, I.T.I. Road, Gendamal, Satara, Maharashtra</option><option value="456" >Seth Govindji Raoji Ayurved Mahavidyalaya, 21/A/13, Budwar Peth, Samarat Chowk, Solapur, Maharashtra</option><option value="389" >SGES Dr. N.A. Magdum Ayurvedic Medical College & Hospital Belgaum Karnataka</option><option value="557" >Shaheed Kartar Singh Sarabha Ayurvedic Medical College & Hospital, V.P.O. – Sarabha, Ludhiana-141 105, Punjab</option><option value="653" >Shaheed Narendra Kumar Ayurvedic Medical College & RKMS Charitable Hospital Pisawa Road Chindaus Aligarh UP</option><option value="687" >Sham-e-Ghausia Minority Unani Medical college, Ghazipur, Uttar Pradesh</option><option value="642" >Shanti Institute of Medical & Higher Studies, Shani Medical Ayurvedic Medical College & Hospital, at Majhauli, Ballia, UP</option><option value="129" >Sharad Chandra Homoeopathic Medical College, Ahmednagar, Maharashtra</option><option value="366" >Sharda Ayurved Medical College, Yadgir, Karnataka</option><option value="133" >Sh. Chamundamata Homoeopathic Medical College & Hospital, Plot No.9,10,11, Gayatri Nagar, Near Telephone Nagar, Distt. Jalgaon-425201</option><option value="570" >Shekhawati Ayurvedic College at Pilani, Rajasthan by BM Education Foundation Trust</option><option value="191" >Sh. H. N. Shukla Homoeopathic  Medical College & Hospital, Sh. H. N. Shukla College  Campus, Nr. Lalpari Lake, Bh. Marketing Yard, Amargadh-Bhichri, Rajkot (by Shree Mahatama Gandhi Education Trust, Rajkot, Gujarat)- 360005.</option><option value="235" >Shitla Sahai Homoeopathic Medical College and Research Institute in Jan Vikas Nyas Cancer Hospital & Research Institute Campus, MandrakiMatha, Lashkar, Gwalior – 474009,  Madhya Pradesh.</option><option value="312" >Shiva Ayurved Medical College & Hospital Bilaspur H.P.</option><option value="617" >Shivalik Ayurvedic Medical College, Bijrava, Bankat, Azamgarh, Uttar Pradesh</option><option value="714" >Shivalik Institute of Ayurveda & Research, Jhajra, Chakrata Road, Dehradun-248007 UK</option><option value="205" >Shivang Homoeopathic Medical College & Hospital, Bairagarh Chichli, NAYAPURA, Kolar Road, Bhopal - 462 042</option><option value="553" >Shiv Shakti Ayurvedic College, Sunam Road, Bhikhi (Mansa)</option><option value="369" >Shree Beereshwar Shikshan Sansthe Sankeshwar Hukkeri Krishna Ayurvedic Medical College Sankeshwar Belgaum Karnataka</option><option value="373" >Shree Chhatrapati Shivaji Education Society’s, Dhanwantari Ayurvedic Medical college, Hospital and Research Centre, SM 1-4, Industrial Estate, Jatrat Road, Shiv Shankar Nagar, Nipani-591237, Karnataka</option><option value="442" >Shree Guru Hargovinde Society SAM College of Ayurvedic Sciences and Hospital Dist Raisen Bhopal M.P.</option><option value="295" >Shree Gyanjot Education Trust Shree Bachubhai Govindbhai Garaiya Ayurvedic Medical College Rajkot Gujarat</option><option value="293" >Shree Krishna Educational Charitable Trust Vadodara's Krishna AMC & H, 103 Gajanan Complex, Tube Colony, Vadodara-390020 Gujarat</option><option value="192" >Shree Limbdi Vikas Trust Homoeopathic Medical College, Limbdi– Dhanuka State Highway, District Surendra Nagar Limbdi -363421</option><option value="39" >Shree Mahalaxmiji  Mahila Homoeopathic Medical College& Hospital,  Nr. Vishwamitri Bridge, Munj Mahuda  Road, Vadodara-390011</option><option value="411" >Shree Narayana Institute of Ayurvedic Stidies & Research, R Sankar Nagar, Karimpinpuzha, P.O. Puthoor Kollam - 691507, Kerala</option><option value="275" >Shree Rasiklal Manskhchandji Dhariwal Ayurved Medical College & Hospital Waghala Dhara Valsad, Gujarat</option><option value="625" >Shree Satya Educational Trust Shree Satya Ayurvedic Medical College Dhanupura Moradabad UP</option><option value="281" >Shree Swami Narayan Ayurvedic Medical College, National Highway No. 8, Kalol, Gandhinagar Gujarat.</option><option value="167" >Shreeyan Ishan Education Society- Hamsa Homoeopathy mEdical College, Hospital And Research Centre, Ksheersagar village, Mulugu Mandal, Telangana</option><option value="245" >Shri Adi Siva Sadguru Alli Saheb Sivaaryula Ayurvedic Medical College & Research Centre, Thimmapuram, Guntal, Andhra Pradesh</option><option value="453" >Shri Ayurved Mahavidyalaya Dhanwantri Marg, Hanuman Nagar, Nagpur - 440 009, Maharashtra</option><option value="304" >Shri Baba Mastnath Ayurved College, Asthal Bohar, Rohtak – 124 001, Haryana</option><option value="643" >Shri Babu Singh Daddu Ji  Ayurvedic Medical College & Hospital, Krishna Nagar, Kanpur Road, Fatehgarh, Distt.-Farrukhabad, U.P.</option><option value="668" >Shri Babu Singh Jay Singh Ayurvedic Medical College & Hospital, Bhaupur, Bewar Road, Fatehgarh, Distt.-Farrukhabad, U.P.</option><option value="284" >Shri Balahanuman Ayurved Mahavidyalaya, Tamansa, Mehsana, Gandhinagar, Gujarat</option><option value="349" >Shri Basaveshwar Vidya Vardhak Sangha Ayurved Medical College, Bagalkot, Distt. Bagalkot, Karnataka</option><option value="139" >Shri Bhagwan Homoeopathic Medical College, and Indira Gandhi Memorial Hospital, CIDCO N-6, Aurangabad – 431003, Maharashtra</option><option value="574" >Shri Bhanwar Lal Dugar Ayurved Vishwabharti (Gandhi Vidyamandir) Distt. Churu, Sardar Shehar, Rajasthan</option><option value="351" >Shri DGM Ayurvedic Medical College Hospital & PG Research Centre, Gadag, Karnataka</option><option value="259" >Shri Dhanwantry Ayurved College & Dabur Dhanwantry Hospital, Chandigarh</option><option value="360" >Shri Dharmasthala Manjunatheshwara Institute of Ayurveda & Hospital at Bangaluru.</option><option value="356" >Shri DM College of Ayurved, Laxminarayana Nagar, Kuthpady, Udupi, Karnataka</option><option value="457" >Shri Gangadhar Shastri Gune Ayurved Mahavidyalaya, Vishrambag, Ahmednagar- 414 001, Maharashtra</option><option value="148" >Shri Ganga Nagar Homeopathic Medical College, Near RIICO, Hanuman Garh Road Sri Ganga Nagar – 335002.</option><option value="94" >Shri Gujarati Samaj Homoeopathic Medical College, Hospital & Research Centre Scheme No.54, A.B. Road, Indore - 452010</option><option value="455" >Shri Gurudeo Ayurved College, Gurukunj Ashram, Tq. Tiosa.(Mozari) 444902, Dist Amrawati, Maharashtra</option><option value="230" >Shri Guru Nanak Dev  Homoeopathic Medical College & Hospital, Barewal, via Ayalikalan, Canal Road, P.O. RajGuru Nagar, Ludhiana -141012</option><option value="348" >Shri Hingulambika Education Society’s Ayurved College, Sidramrao Astikar Marg, Bhavani Nagar, Maktampura, Gulbarga - 585 101 , Karnataka</option><option value="347" >Shri Jagadguru Gavisiddeshwara Ayurvedic Medical College and Hospital, Koppal, Karnataka</option><option value="107" >Shri Jagat Guru Panchacharya Edu. Society’s Homoeopathic Medical College & Hospital , 200 E, Tararani Chowk, Kolhapur – 416003.</option><option value="240" >Shri Janata Homoeopathic Medical College, Tower Jather Peth Road, Kedia Plots, Friends Colony Akola – 444 005.</option><option value="586" >Shri Jayendra Saraswati Ayurved College, 4/295, Bangalore high Road,Narazarathpeth, Distt- Thiruvallur, Chennai– 600 123 Tamil Nadu</option><option value="377" >Shri JG Co-Operative Hospital Society's Sahakar Maharishi Shri B. A. Patil Ayurvedic Medical College Ghataprabha, Karnataka</option><option value="354" >Shri Kalidas Ayurvedic Medical College, Banashankari Road, Badami, Bagalkot,  Karnataka-587201</option><option value="624" >Shri Krishna Ayurvedic Medical College, Rauna Khurd Cholapur, Varanasi- 221001, Uttar Pradesh</option><option value="299" >Shri Krishna Govt. Ayurved  College, Kurukshetra - 132 118 (Haryana)</option><option value="342" >Shri Krishnarajendra Charitable Trust’s  Indian Institute of Ayurvedic Medicine and Research, Bangalore, Karnataka</option><option value="485" >Shri K. R. Pandav Ayurvedic College, Bahadura, Nr. Dighori Naka Nagpur, Maharashtra</option><option value="300" >Shri Maru Singh Memorial Institute of Ayurved, Khanpur Kalan Tehsil Gohana, Dist- Sonipat , Haryana.</option><option value="433" >Shrimati Dhariya Prabha Devi Sojatia Ayurvedic Medical College, Neemthur, Bhanpura, Mandsaur, Madhya Pradesh by Late Dr. Rawatmalji Dhanrupmalji Sojatia Sarvajanik</option><option value="717" >Shri Narayan Prasad Awasthy Govt. Ayurved College, Raipur, Chhattisgarh</option><option value="266" >Shri O.H. Nazar Ayurved College, Near Railway Station, Lal Darwaja Road, Surat-395003 Gujarat</option><option value="287" >Shri P J Mangrolia Charitable Trust Global Institute of Ayurveda Rajkot Gujarat</option><option value="454" >Shri Radha Krishna Toshniwal Ayurved Mahavidyalaya, Station Road, Akola, Maharashtra</option><option value="660" >Shri Ram Chandra Vaidya Ayurvedic Medical College and Hospital, Yamuna Vihar, Chinhat, Lucknow, Uttar Pradesh.</option><option value="234" >Shri Ramnath Singh Shiksha Prasar Samiti's Homoeopathic Medical College & Hospital, Gormi, Bhind-477660</option><option value="630" >Shri Sai Ayurvedic Medical College & Hospital, Aligarh, Uttar Pradesh</option><option value="500" >Shri Saptashrungi Shikshan Sansthan, Yashwant Mandai, Ravivar Peth, Distt. Nasik – 22 001, Maharashtra</option><option value="350" >Shri S.B. Siddalinga Swamiji Ayurvedic Medical College, Mundaragi, Gadag, Karnataka</option><option value="647" >Shri SG Minority Ayurvedic Medical College& Hospital, Saheri, Nandganj, Ghazipur - 233 001, Uttar Pradesh</option><option value="277" >Shri Shamjibhai Harijibhai Talavia Charitable Trust RK University Ayurvedic Medical College & Hospital Rajkot Gujarat</option><option value="571" >Shri Shirdi Sai Baba Ayurvedic College & Hospital at Mundiyagarh, Kishangarh-Renwal, Jaipur by Gandhi U.S.P.S. Samiti, Kishangarh Renwal, Jaipur, Rajasthan</option><option value="380" >Shri Shivayogeeshwar Rural Ayurvedic Medical College & Hospital, Inchal, Karnataka</option><option value="336" >Shri Siddhivinayak Rural Ayurvedic Medical College at Harugeri, Raibag, Belgaum, Karnataka By Shri S. S. Jambagi Memorial Education and Charitable Trust</option><option value="60" >Shri Swaminarayan Homoeopathy College, Ahmedabad-Mehsana National Highway, AT & PO-Saij, Kalol District Gandhinagar, Gujarat, Gujarat</option><option value="125" >Shri Takhatmal, Shrivallabh Homoeopathic Medical College, Homoeo. Sadan, Rajapet, Amravati</option><option value="220" >Shri Tayasaheb Ghatake Charitable Trust’s, R.R. Patil Homoeoapthy Colleeh & Hospital, SSangli, Pune</option><option value="483" >Shri Uttamraoji Dahake Ayurved Medical College and Hospital at Koli, Karanja (LAD) Distt.  Washim, Maharashtra By the Maa Vaishnavi Mahila Mandal, Karanja (Lad)</option><option value="328" >Shri Veerpulikeshi Vidyavardhak Samtha’s Rural Ayurveda Medical College, Badami, Bagalkot Karnataka</option><option value="593" >Shri Venkateshwara Trust JSA Medical College for Siddha Villupuram Tamil Nadu</option><option value="85" >Shri Vidyadhiraja Homeopathic Medical College,  P.O.Nemom, Thiruvananthapuram-695020</option><option value="276" >Shri Vivek Bharti Trust Noble Ayurvedic Medical College Junagarh-362310 Gujarat</option><option value="288" >Shri V. M. Mehta Institute of Ayurved at Rajkot-Kalawad Highway, Kalawad, Jamnagar, Gujarat</option><option value="285" >Shri Yadunandan Education Trust Murlidhar Ayurved College Bhavnagar Road Rajkot Gujarat</option><option value="436" >Shubhdeep Ayurved Medical College, Gram Datoda, Khandwa Road, Near Chokhi Dhani , Indore, Madhya Pradesh</option><option value="357" >Shushrutha Ayurved Medical College, Kathriguppe BSK, Bangalore, Karnataka</option><option value="520" >Siddakala Ayurveda Mahavidyalaya, Sangamner, Maharashtra</option><option value="231" >Singhbhum Homoeopathic Medical College & Hospital, Police Station Road, Sakchi, Jamshedpur - 831 001</option><option value="161" >Sivaraj Homoeopathic Medical College & Research Institute, Siddhar Kovil Road, Thumbanthulipatty,  Salem - 636 307</option><option value="594" >Sivaraj Siddha Medical College and Research Centre, Siddhar Kovil Main Road, Thumbathulipatty, Salem, Tamil Nadu</option><option value="482" >S.M.B.T. Ayurved College, Nandi Hills, Dhamangaon, Tal- Igatpuri, Dist- Nashik, Maharashtra By Sau.  Mathurabai Bhausaheb Thorat Sevabhavi Trust</option><option value="37" >Smt.A.J.Savla,Homoeopathic Medical College & Research Institute, Mehsana, Pushpanjali  Building, Near Jilla Panchayat  Quarters, Visnagar Road, Mehsana – 384 001.</option><option value="109" >Smt. ChandaBen MohanBhai Patel  Homoeopathic Medical College,Natakkar Ram Ganesh  Gadkari Marg,  Irla , Vile Parle (West), Mumbai – 400056</option><option value="523" >Smt. K.C.Ajmera Ayurveda Mahavidyalaya, Deopur, Dhule, Maharashtra</option><option value="452" >Smt. KG Mittal Punarvasu Ayurved Mahavidyalaya, Netaji Subhash Road, Cherni Road, Mumbai – 400 002, Maharashtra</option><option value="52" >Smt.Malini Kishore Sanghvi Homoeopathic Medical College , Oppsite Sumeru Navkar Tirth, Amod Road,  Kajan, Distt Vadodara-391240</option><option value="708" >Smt. Manjira Devi Ayurvedic Medical College Uttarkashi Uttarakhand</option><option value="208" >Smt. S.M.Deo Homoeopathic & Biochemic Medical College & Hospital, Gondia Road, Deo Nagar, Deori, Khursodi,, Balaghat-481001</option><option value="558" >Smt. Urmila Devi Ayurvedic College of Medical Sciences & Hospital, V.P.O. - Kharkan, Una Road, Hoshiarpur-146 001, Punjab</option><option value="188" >Smt. Vasantaben N. Vyas Homoeopathic Medical College & Hospital, SR No.873/2 Jeshingpara, Amreli- 365 601.</option><option value="214" >Smt.Venutai Yashwantrao Chavan  Homoeopathic Medical College, 2968 C, Dasara Chowk, Kolhapur-416 012.</option><option value="512" >Smt. Vimla Devi Ayurvedic Medical College At Wandhari, Post Tadali,Dist- Chandrapur, Maharashtra</option><option value="332" >SMVVS Smt. RKM Ayurved Medical College & Research Centre, Karpurmath Campus, 100FT Ring Road Solapur Road, Behind KC Nagar, Bijapur, Karnataka</option><option value="104" >SNJB’s Smt.Kanchanbai Babulalji Abad Homoeopathic Medical College, Neminagar, Chandwad, Distt. Nashik – 423 101.</option><option value="344" >SNVV Samasthe’s SGV Ayurveda Medical College, Nr. Mini Vidhan Saudha, Dharwad Road, Bailhongal, Belgaum, Karnataka</option><option value="627" >Society of Advanced Studies Varanasi SAS Ayurvedic Medical College Rameshwar Road Harhua Varanasi UP</option><option value="63" >Solan Homoeopathic Medical College & Hospital, Barog Bypass, Kumarhatti , Solan-173229</option><option value="202" >Sophia Homoeopathic Medical College,  Mahal Gaon City Centre, , Gwalior-474002</option><option value="476" >Sou. Shantadevi Vedprakash Patil Ayurvedic College & Research Institute at Gut No. 421, Hatta Tq. Basmat, Hingoli, Maharashtra</option><option value="603" >Sree Vaageshwari Ayurvedic Medical College, Beside LMD Police Station Ramakrishna Colony, Karimnagar, 505481 By the Sree Vaageshwari Educational Society</option><option value="392" >Sri Adichunchanagiri Shiksana Trust, Adichunchanagiri Ayurvedic Medical College, Nagaruru, Bangalore</option><option value="341" >Sri Dhramasthala Manjunathershwara College of Ayurveda & Hospital, Hassan, Karnataka</option><option value="497" >Sri Gajanan Maharaj Sansthan’s Ayurveda Mahavidyalaya, Pusad, Yotmal, Maharashtra</option><option value="379" >Sri Kalabyraveswara Swamy Ayurvedic Medical College, Hospital and Research Centre, No.10, Pipe Line Road, RPC Layout Vijayanagar, Bangalore-560104, Karnataka</option><option value="386" >Sri Kalmatada Poojya Sri Virupaksha Shivacharya Ayurvedic Medical College, Manvi, Karnataka</option><option value="550" >Sri Laxmi Narayan Ayurved College, Near Radha Swami Dera, Chabbal Road, Amritsar, Punjab</option><option value="676" >Sri Madho Das Memorial Shikshan Sansthan's M.D. Ayurvedic Medical College Babarpur Sikandra Agra</option><option value="706" >Srimati Poornadevi Memorial Trust Doon Institute of Ayurveda Faculty Sahaspur Dehradun</option><option value="583" >Sri Nandha Educational Trust, Erode, Nandha Ayurveda Medical College & Hospital Pitchandampalayam, Erode-638052 TN</option><option value="599" >Sri Nandha Educational Trust, Erode Nandha Siddha Medical College & Hospital Erode TN</option><option value="542" >Sri Nrusinghnath Ayurved College & Research Institute, Nrusinghnath, Po Paikmal, Distt. Bargarh, Orissa</option><option value="371" >Sri Paripoorna Sanathana Charitable Trust Sri Paripoorna Sanathana Ayurvedic Medical College and Hospital & Research Centre Arjunbetta Halli Nelamangala Bengaluru</option><option value="338" >Sri Raghavendra Ayurveda Medical College at Malladihalli, Chitradurga, Karnataka</option><option value="622" >Sri Ram Ayurvedic Medical College & Hospital Meerut, U.P.</option><option value="598" >Sri Rengaswamy Educational Trust , Excel Siddha Medical College and Research Centre Pallakkapalayam, Komarapalayam, Namakkal Distt - 637303, Tamil Nadu</option><option value="431" >Sri Sai Gramothan Samiti Sri Sai Institute of Ayurvedic research and Medicine Kolar Road Bhopal  M.P.</option><option value="237" >Sri Sai Nath P.G. Institute of Homoeopathy, 109/4, Jawaharlal Nehru Road, George Town, Allahabad - 211002</option><option value="587" >Sri Sai Ram Ayurveda Medical College, Sai Leo Nagar, Poonthandalam, West Tambram, Sriperambudur Taluk, Kanchipuram  Chennai, Tamil Nadu</option><option value="157" >Sri Sairam Homoeopathic Medical College & Research Centre, Sai Leo Nagar, West Thambaram, Chennai-600044</option><option value="592" >Sri Sai Ram Siddha Medical College and Research Centre, Sai Leo Nagar, Poonthandalam, West Tambram, Sriperumbudur Taluk, Kanchipuram Distt Chennai, Tamil Nadu</option><option value="76" >Sri Satyasai Homoeopathic Medical College & Hospital, Karnataka High School, Regal Circle, Dharwad- 580001</option><option value="549" >Sri Satyasai Muralidhar Ayurveda College & Hospital, G T Road, Dune-K Moga, Mong, Punjab</option><option value="51" >Sri Shamlaji Homoeopathic Medical College, Hospital  & Research Institute, Dahod Road, Godhra, Distt. Panchmahal – 389 001</option><option value="323" >Sri Sri College of Ayurvedic Science & Research, Bangalore, Karnataka by Sri Sri Ravi Shankar Vidya Mandir Trust.</option><option value="614" >SRM Govt. Ayurved College, Bans Mandi Bareilly – 243 001 , Uttar Pradesh</option><option value="634" >S.R.S. Ayurvedic Medical College & Hospital Sikandarpur Agra, U.P.</option><option value="44" >SS Aggarwal Homoeopathic Medical College, Near Devina Park Society, Viranjali Marg, Gandevi Road, Navsari, Gujarat.</option><option value="384" >SS Ayurvedic Medical College, Isarilakmapur, PB Road, Haveri, Karnataka</option><option value="173" >State  Dr. Brij Kishore Homoeopathic Medical College & Hospital, Deokali, Faizabad – 224 001.</option><option value="174" >State Ghazipur Homoeopathic Medical College, Rauza, Ghazipur, UP</option><option value="176" >State Homoeopathic Medical College and Hospital, Barhalganj, Gorakhpur-273402.</option><option value="64" >State Homoeopathic Medical College, Godda, Jharkhand</option><option value="171" >State K. G. K. Government Homoeopathic Medical College, Moradabad, UP</option><option value="168" >State Lal Bahadur Shastri Homoeopathic Medical College & Hospital, 24,Chaitham Lines, Phaphamau, Allahabad – 211 002</option><option value="270" >State Model Institute of Ayurved Sciences Kolavada Gandhinagar Gujarat.</option><option value="169" >State National  Homoeopathic Medical College & Hospital, 1, Viraj Khand, Gomti Nagar, Lucknow – 226001.</option><option value="172" >State Shri Durgaji Homoeopathic Medical College & Hospital, Chandeshwar, Azamgarh – 276 128.</option><option value="679" >State Takmil-ut-Tib College & Hospital, Hkm. Abdul Aziz Road, Jhawai Tola, Lucknow, Uttar Pradesh</option><option value="680" >State Unani Medical College, Himatganj, Allahabad, Uttar Pradesh</option><option value="258" >Sufia Unani Medical College, Hospital & Research Centre, at Bara Chakia, East Champaran Bihar</option><option value="315" >Suryamukhi Dinesh Ayurved Medical College & Hospital, P.O. Booty, Via- Neory Vikash, Dist- Ranchi, Jharkhand</option><option value="244" >SV Ayurved College, TT Devasthanams, Tirupati, Andhra Pradesh</option><option value="79" >SVE Trust Veeerbhadreswara Homoeopathic Medical College, Karnataka</option><option value="117" >S.V.P Homoeopathic Medical College and Research Centre, Hingoli, Aurangabad, Maharashtra.</option><option value="226" >S.V.S. Homoeopathic Medical College, Kallakurichi, Tamil Nadu</option><option value="21" >Swahid Jadav Nath Homoeopathic Medical College & Hospital , Vill. Bagharbari, P.O. Khanapara, Guwahati-781002</option><option value="610" >Swami Kalyandev Government Ayurved College, Rampur, Muzaffarnagar, UP</option><option value="207" >Swami Pranavananda Homoeopathic Medical College & Hospital, Police Lines, Chhattarpur-471 001.</option><option value="249" >Swami Raghavendracharya Tridandi Ayurveda Mahavidyalaya, Gaya, Bihar.</option><option value="516" >Swami Vivekanand Education & Rural Development Charitable Trust Swami Vivekanand Ayurvedic Medical College Shrigonda Ahmednagar MS</option><option value="53" >Swami Vivekanand Homoeopathic Medical College & Hospital, Near Sports Complex Sidsar Road, New Bhavnagar-364060.</option><option value="149" >Swasthya Kalyan Homoeopathic Medical College and Research Center, 10A, Swasthya Kalyan Bhawan, Sitapura Institutional Area, Tonk Road, Jaipur-302004.</option><option value="346" >Taluka Shikshana Prasaraka Sahakara Mandal Ayurvedic Medical College, Sindhagi – 586 128, Distt. Bijapur, Karnataka</option><option value="381" >Tapovana Ayurvedic Medical College & Hospital, Davangare, Karnataka</option><option value="317" >Taranath Govt. Ayurvedic Medical College, Ananthapur Road, Bellary, Karnataka</option><option value="650" >Tasadduque Hussain Muslim Educational Society  WTM Ayurvedic Medical College Vill Fatehpur Mafi Meerpur Amroha UP</option><option value="728" >The Calcutta Homoeopathic Medical College & Hospital, 265 – 266, Acharya Prafulla Chandra Rd., Kolkata – 700 009.</option><option value="195" >The Homoeopathic College & Hospital of Mihijam, P.O. Mihijam, Distt. Jamtara-815354 Jharkhand</option><option value="368" >The Karnataka State Govt Daily Wage Employees Federation Sanjeevini Ayurvedic Medical College Journalist Colony Nripatunga Hills  Hubbali.</option><option value="180" >The Temple of Hahnemann Homoeopathic Medical College & Hospital, Munger – 811 201</option><option value="314" >Tibetan Medical & Astrological College, Men-Tse Khang (Sowa Rigpa), Gangchen Kyishong, distt. Kangra, Dharamshala-176215, Himachal Pradesh</option><option value="449" >Tilak Ayurved Mahavidyalaya, 583/2, Rasta Peth, Pune, Maharashtra</option><option value="399" >Tipu Sultan Saheed Educational Trust’s Unani Medical College, Millat Nagar, Ring Road, Gulbarga, Karnataka</option><option value="376" >TMAE Society’s Ayurveda College & Hospital, Nidige, Shimoga, Karnataka</option><option value="340" >TMAE Society’s Ayurveda College, Sankalapura Tanda, Bellary Road, Hospet, Karnataka</option><option value="196" >Tribal Social Welfare Society’s “Maa Kalawati HMC”, Rajaulatu, Namkum, Ranchi, Jharkhand</option><option value="395" >Tulunadu Education Trust Sharada Ayurveda Medical College and Hospital, Devinagar, Talapady, Mangaluru, Karnataka-575023</option><option value="292" >Umiya Mata Kadva Patidar Education Trust Ananya College of Ayurved Kalaol KIRC Campus Ahmedabad Mahesana Gujarat</option><option value="747" >Unani Medical college and Hospital, Institute of Asian Medical Sciences, Srinagar, J&K</option><option value="225" >Under Faculty of Homoeopathic Sciences, Jayoti Vidyapeeth Women’s University, Vedaant Gyan Valley,Jharna, Mahala Jobber, Link Road, Jaipur- Ajmer Express Way, NH-8, Jaipur</option><option value="565" >University College of Ayurveda, Rajasthan Ayurved University, Nagaur Road, Kadwad, Jodhpur, Rajasthan</option><option value="577" >University College of Unani Baggikhana Tonk Rajasthan</option><option value="741" >Utkalmani Homoeopathic Medical College & Hospital, Nayabazar, Rourkela – 769010.</option><option value="713" >Uttarakhand Utthan Samiti Dev Bhoomi  Ayurved Medical College Dehradun</option><option value="711" >Uttaranchal Ayurvedic College, 17 Old Mussoori Road, Rajpur, Doiwala, Dehradun-248009 Uttaranchal</option><option value="716" >Uttranchal Unani Medical College & Hospital at Mustafabad, Dhanpura, Haridwar</option><option value="364" >Vaagdevi Ayurvedic Medical College, Warangal</option><option value="402" >Vaidyaratnam Ayurved College, Ollur, Thalkkattussery, Trichur, Kerala</option><option value="403" >Vaidyaratnam P.S. Varier Ayurveda College, Kottakkal, Distt. Malappuram, (PO) Edarikode –676 501, Kerala</option><option value="636" >Vaidya Yagyadutta Sharma Ayurveda Mahavidyalaya, Khurja, Uttar Pradesh</option><option value="108" >Vamanrao Ithape Homeopathic Medical College, New Nagar, Sangamner, Distt. Ahmednagar-422605</option><option value="451" >Vasant Dada Patil Ayurved College South Shivajinagar, Sangli , Maharashtra</option><option value="126" >Vasantrao Kale Homoeopathic Medical College & Hospital , P-12, M.I.D.C. Kallam  Road, Latur – 413 531.</option><option value="200" >Vasundhara Raje Homoeopathic Medical College & Hospital, Mahadaji Nagar,Chirwai Naka, Shivpuri Link Road, Laskar,  Gwalior-474001</option><option value="428" >Veena Vadini Ayurved Medical College, Akbarpur Phase-II, Behind Kanhakunj, Kolar Road, Bhopal – 462042, MP</option><option value="596" >Velumailu Siddha MC, Sriperambudur, Tamilnadu</option><option value="154" >Venkateswara Homoeopathic Medical College & Hospital, 6/177-A, Mount Poonamallee Road, Porur, Karambakkam, Chennai - 600116</option><option value="459" >Vidarbha Ayurveda Mahavidyalaya, Dhanwantari Nagar, Chhatari Talao Road, Amrawati, Maharashtra</option><option value="193" >Vidhyadeep Homoeopathic Medical College & Research Center, at Vidhyadeep Campus, At &Post-Anita(Kim)-Olpad Road, Taluka, Olpad Dist. Surat, Gujarat</option><option value="130" >Vidya Vaibhav Dapoli Homoeopathic Medical College, at Apti, P.O. Talsure, Dapoli, Distt. Ratnagiri-415712</option><option value="430" >Vijayashree Ayurvedic Medical College and Hospital Near Kachpura Railway Station PO Garha (Main), Jabalpur-482003 Madhya Pradesh</option><option value="324" >Vijay Mahantesh Ayurveda College, Ilkal, Karnataka</option><option value="153" >Vinayaka Mission's Homoeopathic Medical College & Hospital, Sankari Main Road (NH-47), Seeragapadi,   Salem- 636308.</option><option value="417" >Vishnu Ayurved College, PO Government Press, Shoranur – 2, Distt. Palakkad , Kerala</option><option value="656" >Vivek College of Ayurvedic Sciences & Hospital, Moradabad Road, Bijnor U.P.</option><option value="156" >White Memorial Homoeopathic Medical College, Attoor, Veeyannoor Distt. Kanyakumari – 629 177.</option><option value="492" >Yashwant Ayurvedic College, At Post- Kodoli, Tal. Panhala, Distt. Kolhapur-416 114 , Maharashtra</option><option value="509" >Yashwantrao Chavan Ayurvedic Medical College and Hospital, Aurangabad, Maharashtra</option><option value="330" >Yellalinga Educaiton Trust’s Sri Siddharameswara Ayurveda Medical College, Naubad, Bidar, Karnataka</option><option value="383" >Yenepoya Ayurvedic Medical College, R.S. No. 28/29/32 Naringana Village, Post Deralakatte, Bantval, Dakshin Kanara, Mangaluru, Karnataka- 575018</option><option value="68" >Yenepoya Homoeopathic Medical College & Hospital, S No-29,30,31, Naringana Village, Post- Deralakatte(Mangalore), Talk-Bantwal, District Dakhin Kannada, Karnataka-575018.</option><option value="511" >Yerala Medical Trust & Research Centre’s, Y.M.T. Ayurvedic Medical College & Hospital, Sector No.4, Kharghar Station, Navi Mumbai, Distt. Raigad, Mumbai – 400 614 , Maharashtra</option><option value="98" >Y.M.T. Homoeopathic Medical College and Hospital, P.G. Institute, Institutional Area, Sector-4, Khargar, Navi Mumbai - 410210.</option><option value="722" >Youth Foundation of India Chhattisgarh Mahaveer College of Ayurvedic Science G E Road Rajnandgaon CG</option><option value="534" >Yunus Fazlani Unani Medical College, Kunjkheda, Kannad, Aurangabad by Umar Bin Khattab Welfare Trust, Kunjkheda, Kannad, Aurangabad</option><option value="224" >Yuvraj Pratap Singh Memorial Homoeopathic Medical College, Hospital & Research Centre, Shivaji Park, Alwar – 301001.</option><option value="532" >Zuleikhabai Valy Md. Unani Medical College Medical College & Hospital, Pune, Maharashtra</option><option value="257" >Zulfequar Haider Unani Medical College & Hospital, Naya Qila Nawalpur, Siwan - 841 226, Bihar.</option>
+                                 </select>
+                                                        </div>
+
+
+
+
+
+
+
+
+
+                                                    </div>
+                                                    <div class="form-group  row mt-4">
+                                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                                            <label>Full Name<span class="text-danger">*</span></label>
+                                                            <div class="input_base">
+                                                                <input id="name" type="text" class="textonly loginput form-control" name="name" value="" required autofocus maxlength="50">
+
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                                            <label>Father's name<span class="text-danger">*</span></label>
+                                                            <div class="input_base">
+                                                                <input id="father_name" type="text" class="textonly loginput form-control" name="father_name" value="" required autofocus maxlength="50">
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                                            <label>Date of Birth<span class="text-danger">*</span></label>
+                                                            <div class="input_base">
+                                                                <span class="input-group-addon"><i class="far fa-calendar-alt"></i></span>
+                                                                <input id="date_of_birth" type="text" class="form-control loginput" name="date_of_birth" value="" required readonly="true">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group  row mt-4">
+                                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                                            <label>Email<span class="text-danger">*</span></label>
+                                                            <div class="input_base">
+                                                                <span class="input-group-addon"><i class="fas fa-envelope"></i></span>
+                                                                <input id="email" type="text" class="form-control loginput" name="email" value="" required maxlength="50">
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                                            <label>Mobile No.<span class="text-danger">*</span></label>
+                                                            <div class="input_base">
+                                                                <span class="input-group-addon"><i class="fas fa-mobile"></i></span>
+                                                                <input id="phone" type="text" class="numbersonly form-control loginput" name="mobile_no" value="" required maxlength="13">
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                                            <label>Gender<span class="text-danger">*</span></label>
+                                                            <div class="radio-f">
+                                                                <label class="radio-inline">
+                                                <input type="radio" name="gender" value="Male" checked="true"> Male
+                                                </label>
+                                                                <label class="radio-inline">
+                                                <input type="radio" name="gender" value="Female"> Female
+                                                </label>
+                                                                <label class="radio-inline">
+                                                <input type="radio" name="gender" value="Others"> Others
+                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group  row mt-4">
+
+                                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                                            <label>Password</label><span class="text-danger">*</span>
+                                                            <div class="input_base">
+                                                                <span class="input-group-addon"> 
+      <i class="fas fa-eye-slash" id="eye"></i> 
+     </span>
+                                                                <input name="password" type="password" id="password_reg" class="form-control loginput tooltiptext" maxlength="16" required="true" data-html="true" data-html="true" data-toggle="tooltip" title="
+Note: 1. Your password has to be at least 8 characters long. 
+2. Must contain at least one lower case letter.
+3. one upper case letter,one digit.
+4. and one of these special characters ~!@#$%^&*()_+">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                                            <label>Confirm Password</label><span class="text-danger">*</span>
+                                                            <div class="input_base">
+                                                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                                                <input name="password_confirmation" type="password" id="password_confirmation_reg" class="form-control loginput" maxlength="16" required="true">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                                            <label>Address</label>
+                                                            <div class="input_base">
+                                                                <span class="input-group-addon"><i class="fas fa-home"></i></span>
+                                                                <input type="text" name="address" class="form-control loginput" maxlength="255">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group  row mt-4">
+                                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                                            <label for="inputState">State</label><span class="text-danger">*</span>
+
+                                                            <select name="ref_state_id" id="ref_state_id" class="form-control" required autofocus>
+												<option value="">Select State</option>
+												<option value="35" >ANDAMAN AND NICOBAR ISLANDS</option><option value="28" >ANDHRA PRADESH</option><option value="12" >ARUNACHAL PRADESH</option><option value="18" >ASSAM</option><option value="10" >BIHAR</option><option value="4" >CHANDIGARH</option><option value="22" >CHHATTISGARH</option><option value="7" >DELHI</option><option value="30" >GOA</option><option value="24" >GUJARAT</option><option value="6" >HARYANA</option><option value="2" >HIMACHAL PRADESH</option><option value="1" >JAMMU AND KASHMIR</option><option value="20" >JHARKHAND</option><option value="29" >KARNATAKA</option><option value="32" >KERALA</option><option value="25" >LADAKH</option><option value="31" >LAKSHADWEEP</option><option value="23" >MADHYA PRADESH</option><option value="27" >MAHARASHTRA</option><option value="14" >MANIPUR</option><option value="17" >MEGHALAYA</option><option value="15" >MIZORAM</option><option value="13" >NAGALAND</option><option value="21" >ODISHA</option><option value="34" >PUDUCHERRY</option><option value="3" >PUNJAB</option><option value="8" >RAJASTHAN</option><option value="11" >SIKKIM</option><option value="33" >TAMIL NADU</option><option value="36" >TELANGANA</option><option value="26" >THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU</option><option value="16" >TRIPURA</option><option value="5" >UTTARAKHAND</option><option value="9" >UTTAR PRADESH</option><option value="19" >WEST BENGAL</option>
+											</select>
+                                                        </div>
+                                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                                            <label for="inputState">District</label>
+                                                            <select name="ref_district_id" id="ref_district_id" class="form-control" required autofocus>
+											<option value="">Select District</option>
+											
+											</select>
+                                                        </div>
+                                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                                            <label>Pincode<span class="text-danger">*</span></label>
+                                                            <div class="input_base">
+                                                                <input type="text" name="pincode" id="pincode" class="form-control numbersonly loginput" maxlength="6" required="true">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <div class="form-group  row mt-4">
+                                                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+
+                                                            <label>Upload Image</label>
+                                                            <BR>
+                                                            <img id="profileImage" src="https://ayushnext.ayush.gov.in/frontend/images/280x200.png" alt="" class="img-fluid" />
+
+                                                            <input id="imageUpload" type="file" name="profile_photo" placeholder="Photo" value="" style="display: none"><br>
+
+
+
+                                                        </div>
+                                                    </div>
+
+
+
+
+                                                    <div class="form-group row mt-4 d-flex align-items-center">
+                                                        <div class="captcha col-md-2 col-form-label text-md-right">
+                                                            <span><img src="https://ayushnext.ayush.gov.in/captcha/flat?aFdc0GQF" > </span>
+                                                        </div>
+                                                        <div class="col-12 col-md-1 text-center">
+                                                            <i class="fas fa-sync btn-refresh"></i>
+                                                        </div>
+
+                                                        <div class="captchatext col-md-3">
+                                                            <input name="captcha" type="text" placeholder="Enter Captcha" class="form-control loginput" maxlength="15" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row mt-4">
+                                                        <div class="col-sm-12">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" name="terms_agreement" id="gridCheck1">
+                                                                <label class="form-check-label" for="gridCheck1">
+                                                I hereby declare that the details furnished above are true and correct to the best of my knowledge and belief and I undertake to inform you of any changes therein, immediately.<a href="https://ayushnext.ayush.gov.in/site/terms-and-conditions">Terms & Conditions</a>
+                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row mt-4">
+                                                        <div class="col-sm-12">
+                                                            <input type="reset" class="btn rstbtn rstbtn1" value="Reset Form">
+                                                            <input type="button" value="Register" class="btn rstbtn rstbtn2 btn-info" name="btn_send_otp">
+
+                                                            <input type="hidden" name="hidden_profile_image">
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="coching" role="tabpanel" aria-labelledby="profile-tab">2</div>
+                            <div class="tab-pane fade" id="industry" role="tabpanel" aria-labelledby="contact-tab">3</div>
+                            <div class="tab-pane fade" id="epert2" role="tabpanel" aria-labelledby="contact-tab">4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--  Section for content ends -->
+
+    <!----Footer Component-------------------->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <ul class="footer-m">
+                        <li><a href="https://ayushnext.ayush.gov.in/site/terms-and-conditions">Terms & Conditions</a></li>
+                        <li><a href="https://ayushnext.ayush.gov.in/site/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="https://ayushnext.ayush.gov.in/site/hyperlinking-policy">Hyperlinking Policy</a></li>
+                        <li><a href="https://ayushnext.ayush.gov.in/site/copyright-policy">Copyright Policy</a></li>
+                        <li><a href="https://ayushnext.ayush.gov.in/site/disclaimer">Disclaimer</a></li>
+                        <li><a href="https://ayushnext.ayush.gov.in/site/help">Help</a></li>
+                        <li><a href="https://ayushnext.ayush.gov.in/site/download">Downloads</a></li>
+                        <li><a href="https://ayushnext.ayush.gov.in/site/feedback">Feedback</a></li>
+                        <li><a href="https://ayushnext.ayush.gov.in/all-schemes">Schemes</a></li>
+                        <li><a href="https://ayushnext.ayush.gov.in/gallery">Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----Footer Component-------------------->
+    <section class="footer bd-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 pt-2 pb-3">
+                    <p class="copyright">Copyright © 2022 Ministry of Ayush , Government of India, All Rights Reserved.</p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 pt-2 text-center">
+                    <ul class="footer-m m-last">
+                        <li><a href="#">Vistor: 2620823 </a></li>
+                        <!--li><a href="#">Last Updated: 26 Aug 2022</a></li-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer logo section -->
+
+    <script src="https://ayushnext.ayush.gov.in/js/popper.min.js"></script>
+    <script src="https://ayushnext.ayush.gov.in/frontend/js/jquery.min.js"></script>
+    <script src="https://ayushnext.ayush.gov.in/frontend/js/bootstrap.js"></script>
+    <script src="https://ayushnext.ayush.gov.in/frontend/js/owl.carousel.js"></script>
+    <script src="https://ayushnext.ayush.gov.in/js/jquery-ui.js"></script>
+    <script src="https://ayushnext.ayush.gov.in/js/util.js"></script>
+    <script src="https://ayushnext.ayush.gov.in/js/sweetalert2.all.min.js"></script>
+    <script src="https://ayushnext.ayush.gov.in/js/jquery.validate.min.js"></script>
+    <script src="https://ayushnext.ayush.gov.in/js/custom.js"></script>
+
+    <link href="https://ayushnext.ayush.gov.in/frontend/css/video-js.css" rel="stylesheet" />
+
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7)-->
+    <script src="https://ayushnext.ayush.gov.in/frontend/js/videojs-ie8.min.js"></script>
+    <script src="https://ayushnext.ayush.gov.in/frontend/js/video.js"></script>
+
+
+    <script type="text/javascript" src="https://ayushnext.ayush.gov.in/js/sha.js"></script>
+    <script type="text/javascript">
+        $("#profileImage").click(function(e) {
+            $("#imageUpload").click();
+        });
+
+
+        $("#imageUpload").change(function() {
+            imagePreview(this, 'profileImage');
+        });
+
+        function imagePreview(input, id) {
+            var ext = input.files[0]['name'].split(".");
+            ext = ext[ext.length - 1].toLowerCase();
+            var arrayExtensions = ["jpg", "jpeg", "png"];
+
+            if (arrayExtensions.lastIndexOf(ext) == -1) {
+                alert("Wrong Image Format");
+                $('#' + id).attr('src', 'https://via.placeholder.com/250');
+                return false;
+            }
+            if (input.files[0].size > 2000000) {
+                alert("Please upload file less then 2MB. thenks!!");
+                $('#' + id).attr('src', 'https://via.placeholder.com/250');
+                return false;
+            }
+
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('#' + id).attr('src', e.target.result);
+                    $('#' + id).removeClass('has-error');
+
+                    $('input[type="hidden"][name="hidden_profile_image"]').val(e.target.result);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        function refreshCaptacha() {
+            $.ajax({
+                type: 'GET',
+                url: 'https://ayushnext.ayush.gov.in/admin/refresh_captcha',
+                success: function(data) {
+                    $(".captcha span").html(data);
+                }
+            });
+        }
+
+        $(".btn-refresh").click(function() {
+            refreshCaptacha();
+        });
+
+        setTimeout(function() {
+            $('#validate').fadeOut('fast');
+        }, 5000);
+
+        var start = new Date();
+        start.setFullYear(start.getFullYear());
+        var end = new Date();
+        end.setFullYear(end.getFullYear() - 70);
+
+        $("input[type='text'][name='date_of_birth']").datepicker({
+            dateFormat: 'dd-mm-yy',
+            changeMonth: true,
+            changeYear: true,
+            yearRange: end.getFullYear() + ':' + (start.getFullYear() - 12),
+            maxDate: '0',
+            defaultDate: '01-' + (start.getMonth() + 1) + '-' + end.getFullYear()
+        });
+
+        $('input[type="button"][name="btn_send_otp"]').on('click', function() {
+
+            var user_type = $("#user_type").val();
+            if (user_type == "") {
+                Swal.fire("Please Select Student Type.");
+                return false;
+            }
+
+            var ref_college_id = $("#ref_college_id").val();
+            if (ref_college_id == "" && user_type == 'Ayush Students') {
+                Swal.fire("Please Select College Name.");
+                return false;
+            }
+
+
+            //name
+            var rname = $("input[type='text'][name='name']").val();
+            if (rname == "") {
+                Swal.fire("Please Enter Name.");
+                return false;
+            }
+
+            //name
+            var rname = $("input[type='text'][name='father_name']").val();
+            if (rname == "") {
+                Swal.fire("Please Enter Father Name.");
+                return false;
+            }
+
+            //dob
+            var dob = $("input[type='text'][name='date_of_birth']").val();
+            if (dob == "") {
+                Swal.fire("Please Select Date Of Birth.");
+                return false;
+            }
+
+            //email
+            var remail = $("input[type='text'][name='email']").val();
+            if (remail != "") {
+                if (!validateEmail(remail)) {
+                    Swal.fire("Please Enter Valid Email.");
+                    return false;
+                }
+            } else {
+                Swal.fire("Please Enter Email.");
+                return false;
+            }
+
+            //phone no
+            var mobile_no = $("input[type='text'][name='mobile_no']").val();
+            if (mobile_no == "") {
+                Swal.fire("Please Enter Phone No.");
+                return false;
+            }
+
+
+            if (mobile_no.length <= 2) {
+                Swal.fire("Please Enter Valid Phone No.");
+                return false;
+            }
+
+            //passsword
+            var secret = $('#password_reg').val();
+            if (secret == "") {
+                Swal.fire("Please Enter Password.");
+                return false;
+            }
+
+            //Confirm password
+            var password_confirmation_reg = $('#password_confirmation_reg').val();
+            if (password_confirmation_reg == "") {
+                Swal.fire("Please Enter Confirm Password.");
+                return false;
+            }
+
+            if (secret != password_confirmation_reg) {
+                Swal.fire("Password And Confirm Password Doesn't Matched.");
+                $('#password_reg').val('');
+                $('#password_confirmation_reg').val('');
+                return false;
+            }
+
+
+            var state = $("#ref_state_id").val();
+            if (state == "") {
+                Swal.fire("Please Select State.");
+                return false;
+            }
+
+            var pin = $("#pincode").val();
+            if (pin == "") {
+                Swal.fire("Please Select Pincode.");
+                return false;
+            }
+
+            if (pin.length < 6) {
+                Swal.fire("Please enter correct Pincode.");
+                return false;
+            }
+
+
+
+            //captcha
+            var ecaptcha = $("input[type='text'][name='captcha']").val();
+            if (ecaptcha == "") {
+                Swal.fire("Please Enter Captcha Code.");
+                return false;
+            }
+
+            //terms_agreement
+            var terms_agreement = $("input[type='checkbox'][name='terms_agreement']").prop("checked");
+            if (terms_agreement == false) {
+                Swal.fire("The Terms and Agreement is required.");
+                return false;
+            }
+
+            var pattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,16}$/;
+            if (pattern.test(secret)) {
+                var shaObj = new jsSHA("SHA-256", "TEXT");
+                shaObj.update(secret);
+                var hash = shaObj.getHash("HEX");
+                $('#password_reg').val(hash);
+
+                var secret1 = $('#password_confirmation_reg').val();
+                var shaObj1 = new jsSHA("SHA-256", "TEXT");
+                shaObj1.update(secret1);
+                var hash1 = shaObj1.getHash("HEX");
+                $('#password_confirmation_reg').val(hash1);
+
+            } else {
+                swal.fire('', 'Password should contain at least one lowercase letter, one uppercase letter, one numeric digit, and one special character (@#$%) and length should be beween 8 to 16', 'error');
+                $('#password_reg').val('');
+                $('#password_confirmation_reg').val('');
+                $("input[type='text'][name='captcha']").val('');
+                refreshCaptacha();
+                return false;
+            }
+
+            Ajax.store($('form#registerForm').serialize(), $('form#registerForm').attr('action')).done(function(response) {
+                console.log(response.status);
+
+                if (response.status == false) {
+                    Swal.fire(response.message);
+                    $("input[type='text'][name='captcha']").val('');
+                    $('#password_reg').val('');
+                    $('#password_confirmation_reg').val('');
+                    refreshCaptacha();
+                } else if (response.status == true) {
+                    Swal.fire(response.message);
+                    refreshCaptacha();
+                    setTimeout(function() {
+                        window.location.href = "https://ayushnext.ayush.gov.in/user/login";
+                    }, 5000);
+
+                    // Registration is successfull, open window for otp			
+                    /*$("#otpVerifyModal").modal('show');	
+
+                    $('#otpVerifyModal').modal({
+                    	show: true,
+                    	backdrop: 'static',
+                    	keyboard: false
+                    });		*/
+                }
+            });
+
+        });
+
+        /* Remove has-error class when keyup */
+
+        $('form.loginformarea input').on('keyup', function() {
+            var $this = $(this);
+            if ($(this).val() != "") {
+                $this.removeClass('has-error');
+            }
+        });
+
+        $('input[type="button"][name="btn_otp_verify"]').on('click', function() {
+
+            var $this = $('input[type="text"][name="otp"]');
+            var otp = $this.val();
+
+            if (otp == "") {
+                $this.addClass('has-error');
+                $this.prop('placeholder', "The " + $this.attr('name') + " field is required");
+                return false;
+            }
+            var form = $('form').serialize();
+            form += "&otp=" + otp;
+
+            Ajax.store(form, 'https://ayushnext.ayush.gov.in/students/validate-otp').done(function(response) {
+                if (response.status == false) {
+                    Swal.fire(response.message);
+                } else if (response.status == true) {
+                    Swal.fire(response.message);
+                    $('#otpVerifyModal').modal('hide');
+                    $("#accountSuccessModal").modal('show');
+                    $('#accountSuccessModal').modal({
+                        show: true,
+                        backdrop: 'static',
+                        keyboard: false
+                    });
+
+                    setTimeout(function() {
+                        location.reload();
+                    }, 2000);
+
+                }
+            });
+        });
+
+        $('input[type="button"][name="btn_resend_OTP"]').on('click', function() {
+
+            var form = $('form').serialize();
+
+            Ajax.store(form, 'https://ayushnext.ayush.gov.in/students/resend-otp').done(function(response) {
+                var html = "";
+                if (response.status == false) {
+                    html += '<div class="alert alert-danger" role="alert">' + response.message + '</div>';
+                } else if (response.status == true) {
+                    html += '<div class="alert alert-success" role="alert">' + response.message + '</div>';
+                }
+
+                $('.modal-messages').html(html);
+            });
+        });
+
+        $('select#ref_state_id').on('change', function() {
+            let ref_state_id = $(this).val();
+            if (ref_state_id != "") {
+                $.ajax({
+                    url: 'https://ayushnext.ayush.gov.in/admin/getDistrict',
+                    type: 'post',
+                    data: {
+                        'ref_state_id': ref_state_id
+                    },
+                    success: function(response) {
+                        $('select#ref_district_id').html(response.options);
+                    }
+                });
+            } else {
+                $('select#ref_district_id').val('');
+            }
+        });
+
+
+        $(document).on('change', '.usertype', function() {
+            var type = $(this).val();
+            if (type == 'Ayush Students') {
+                $('.collegenames').css("display", "block");
+            } else {
+                $('.collegenames').css("display", "none");
+                $('#ref_college_id').val('');
+            }
+
+
+        });
+        $(function() {
+
+            $('#eye').click(function() {
+
+                if ($(this).hasClass('fa-eye-slash')) {
+
+                    $(this).removeClass('fa-eye-slash');
+
+                    $(this).addClass('fa-eye');
+
+                    $('#password_reg').attr('type', 'text');
+
+                } else {
+
+                    $(this).removeClass('fa-eye');
+
+                    $(this).addClass('fa-eye-slash');
+
+                    $('#password_reg').attr('type', 'password');
+                }
+            });
+        });
+    </script>
+    <script>
+        function handlePreloader() {
+            if ($('.preloader').length) {
+                $('body').removeClass('active-preloader-ovh');
+                $('.preloader').fadeOut();
+            }
+        }
+
+
+        jQuery(window).on('load', function() {
+            (function($) {
+                // 	             handlePreloader()
+
+                // thmScrollAnim();
+
+            })(jQuery);
+        });
+
+        $('.search_input').keypress(function() {
+            //  console.log($(this).val().length);
+            if ($(this).val()) {
+                $(".custm-s-btn").css("color", "#000");
+            } else {
+                $(".custm-s-btn").css("color", "#fff");
+
+            }
+        })
+
+        /* preloader */
+    </script>
+</body>
+
+</html>
